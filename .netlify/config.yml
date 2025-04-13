@@ -2,9 +2,9 @@ editor:
   enabled: true
   publish_dir: "."
   collections:
-    - name: "pages"
-      label: "Pages"
+    - name: "test"
+      label: "Test Page"
       path: "/"
       files:
-        - label: "Index"
-          file: "index.htm"
+        - label: "Editor Test"
+          file: "editable-test.html"
