@@ -252,7 +252,7 @@ UL {
 	top: 61px;
 }
 .IndexHeader {
-	background-color: #FFFFFF;
+	background-color: #000000;
 	border-bottom: 1px solid #92A1AF;
 	background-image: url(../images/hbg.gif);
 	background-repeat: repeat-x;
@@ -265,7 +265,7 @@ UL {
 	padding: 0px;
 }
 .IndexTitle {
-	color: #405E8D;
+	color: #ffffff;
 	font-size: 15px;
 	font-weight: bold;
 	position: absolute;
