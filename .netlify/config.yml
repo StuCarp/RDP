@@ -1,0 +1,10 @@
+editor:
+  enabled: true
+  publish_dir: "."
+  collections:
+    - name: "pages"
+      label: "Pages"
+      path: "/"
+      files:
+        - label: "Index"
+          file: "index.html"
