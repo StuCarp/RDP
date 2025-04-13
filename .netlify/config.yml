@@ -6,5 +6,5 @@ editor:
       label: "Test Page"
       path: "/"
       files:
-        - label: "Editor Test"
-          file: "editable-test.html"
+        - label: "Main Page"
+          file: "index.html"
