@@ -2,9 +2,9 @@ editor:
   enabled: true
   publish_dir: "."
   collections:
-    - name: "test"
-      label: "Test Page"
+    - name: "pages"
+      label: "Pages"
       path: "/"
       files:
-        - label: "Main Page"
+        - label: "Index"
           file: "index.htm"
