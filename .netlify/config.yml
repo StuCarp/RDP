@@ -7,4 +7,4 @@ editor:
       path: "/"
       files:
         - label: "Index"
-          file: "index.html"
+          file: "index.htm"
