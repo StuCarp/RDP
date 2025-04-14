@@ -1094,10 +1094,13 @@ function toggleItem(item, type)
 
     function highlightTreeNode(href) {
       try {
+        // Update this selector to match the actual treeview container
         var tocLinks = parent.tocFrame.document.querySelectorAll('a[href]');
         tocLinks.forEach(function (link) {
           if (link.getAttribute('href') === href) {
-            link.click();
+            link.classList.add('highlight');  // Add 'highlight' class to highlight the link
+          } else {
+            link.classList.remove('highlight');  // Remove highlight from other links
           }
         });
       } catch (e) {
@@ -1110,24 +1113,34 @@ function toggleItem(item, type)
       if (link.href.startsWith('mailto:') || link.href.includes('#')) return;
 
       link.onclick = function (e) {
-        e.preventDefault();
+        e.preventDefault();  // Prevent the default link behavior (e.g., opening in a new tab)
         var href = link.getAttribute('href');
-        if (parent && typeof parent.loadPage === 'function') {
-          parent.loadPage(href);
-          highlightTreeNode(href);
+
+        // Load the content into the iframe (make sure iframe ID matches)
+        var iframe = document.getElementById('linkDocIFrame');
+        if (iframe) {
+          iframe.src = href;  // Set the src of the iframe to the clicked link's href
         }
+
+        // Highlight the corresponding item in the treeview
+        highlightTreeNode(href);
       };
     });
 
     var areas = document.querySelectorAll('area[href]');
     areas.forEach(function (area) {
       area.onclick = function (e) {
-        e.preventDefault();
+        e.preventDefault();  // Prevent the default behavior
         var href = area.getAttribute('href');
-        if (parent && typeof parent.loadPage === 'function') {
-          parent.loadPage(href);
-          highlightTreeNode(href);
+
+        // Load the content into the iframe
+        var iframe = document.getElementById('linkDocIFrame');
+        if (iframe) {
+          iframe.src = href;  // Set the src of the iframe to the clicked link's href
         }
+
+        // Highlight the corresponding item in the treeview
+        highlightTreeNode(href);
       };
     });
   };
