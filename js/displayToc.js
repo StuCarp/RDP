@@ -1083,18 +1083,53 @@ function toggleItem(item, type)
 			tableSelTable.childNodes[1].style.width = (tableSelTable.offsetWidth - 19) + "px";
 	}
 	}
-	window.onload = function () {
-  var links = document.querySelectorAll('a[href]');
-  links.forEach(function (link) {
-    // Skip anchor links and mailto
-    if (link.href.startsWith('mailto:') || link.href.includes('#')) return;
+(function () {
+  var originalOnload = window.onload;
+  window.onload = function () {
+    if (typeof originalOnload === 'function') {
+      originalOnload();
+    }
 
-    // Fix links so they load in the EA right-hand frame
-    link.onclick = function (e) {
-      e.preventDefault();
-      if (parent && typeof parent.loadPage === 'function') {
-        parent.loadPage(link.getAttribute('href'));
+    function highlightTreeNode(href) {
+      try {
+        var tocLinks = parent.tocFrame.document.querySelectorAll('a[href]');
+        tocLinks.forEach(function (link) {
+          if (link.getAttribute('href') === href) {
+            link.click();
+          }
+        });
+      } catch (e) {
+        console.log("Highlighting tree failed:", e);
       }
+    }
+
+    var links = document.querySelectorAll('a[href]');
+    links.forEach(function (link) {
+      if (link.href.startsWith('mailto:') || link.href.includes('#')) return;
+
+      link.onclick = function (e) {
+        e.preventDefault();
+        var href = link.getAttribute('href');
+        if (parent && typeof parent.loadPage === 'function') {
+          parent.loadPage(href);
+          highlightTreeNode(href);
+        }
+      };
+    });
+
+    var areas = document.querySelectorAll('area[href]');
+    areas.forEach(function (area) {
+      area.onclick = function (e) {
+        e.preventDefault();
+        var href = area.getAttribute('href');
+        if (parent && typeof parent.loadPage === 'function') {
+          parent.loadPage(href);
+          highlightTreeNode(href);
+        }
+      };
+    });
+  };
+})();
     };
   });
 };
