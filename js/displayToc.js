@@ -1083,5 +1083,3 @@ function toggleItem(item, type)
 			tableSelTable.childNodes[1].style.width = (tableSelTable.offsetWidth - 19) + "px";
 	 }
 }
-
-
