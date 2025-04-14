@@ -660,6 +660,7 @@ function tocBuild(data)
 
 function tocBuildItem(i)
 {
+
 	var childItem = false;
 
 	if (tocTab[i][0].indexOf(':') != -1)
@@ -673,8 +674,7 @@ function tocBuildItem(i)
 	else
 		tocBranch = tocRoot;
 
-	tocBranch.setAttribute('data-diagram-id', tocTab[i][0]);
-
+	//Check if item is child
 	if (tocTab[i][5] && tocTab[i][6] && tocTab[i][6] != "0")
 	{
 		if (document.getElementById(tocTab[i][6]) == null)
@@ -1082,19 +1082,4 @@ function toggleItem(item, type)
 		if (tableSelTable.childNodes[1].style)
 			tableSelTable.childNodes[1].style.width = (tableSelTable.offsetWidth - 19) + "px";
 	}
-	}
-	window.onload = function () {
-  var links = document.querySelectorAll('a[href]');
-  links.forEach(function (link) {
-    // Skip anchor links and mailto
-    if (link.href.startsWith('mailto:') || link.href.includes('#')) return;
-
-    // Fix links so they load in the EA right-hand frame
-    link.onclick = function (e) {
-      e.preventDefault();
-      if (parent && typeof parent.loadPage === 'function') {
-        parent.loadPage(link.getAttribute('href'));
-      }
-    };
-  });
-};
+}
