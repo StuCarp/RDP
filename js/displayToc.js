@@ -1082,8 +1082,7 @@ function toggleItem(item, type)
 		if (tableSelTable.childNodes[1].style)
 			tableSelTable.childNodes[1].style.width = (tableSelTable.offsetWidth - 19) + "px";
 	}
-	}
-(function () {
+	(function () {
   var originalOnload = window.onload;
   window.onload = function () {
     if (typeof originalOnload === 'function') {
@@ -1130,6 +1129,3 @@ function toggleItem(item, type)
     });
   };
 })();
-    };
-  });
-};
