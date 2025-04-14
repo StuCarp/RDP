@@ -1081,7 +1081,6 @@ function toggleItem(item, type)
 
 		if (tableSelTable.childNodes[1].style)
 			tableSelTable.childNodes[1].style.width = (tableSelTable.offsetWidth - 19) + "px";
-	}
 	(function () {
   var originalOnload = window.onload;
   window.onload = function () {
