@@ -1083,3 +1083,18 @@ function toggleItem(item, type)
 			tableSelTable.childNodes[1].style.width = (tableSelTable.offsetWidth - 19) + "px";
 	}
 	}
+	window.onload = function () {
+  var links = document.querySelectorAll('a[href]');
+  links.forEach(function (link) {
+    // Skip anchor links and mailto
+    if (link.href.startsWith('mailto:') || link.href.includes('#')) return;
+
+    // Fix links so they load in the EA right-hand frame
+    link.onclick = function (e) {
+      e.preventDefault();
+      if (parent && typeof parent.loadPage === 'function') {
+        parent.loadPage(link.getAttribute('href'));
+      }
+    };
+  });
+};
