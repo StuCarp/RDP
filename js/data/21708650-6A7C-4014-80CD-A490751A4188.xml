@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.2.2:1", "", "Signalling System Description", "EARoot/EA2/EA2/EA771.htm", "175.png", "222", "0", "", "Logical diagram0","{A66F42C9-BF05-44e9-9511-54050891F178}");
+tocTab[tocTab.length] = new Array("0.2.2.1", "1", "Signalling System Description Elements", "EARoot/EA2/EA2/EA1/EA787.htm", "4.png", "", "", "{0C6C09D4-C2A8-48f0-8652-DC5F5F7A201E}", "Package");
