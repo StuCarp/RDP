@@ -673,10 +673,8 @@ function tocBuildItem(i)
 	else
 		tocBranch = tocRoot;
 
-	// Add the data-diagram-id attribute
 	tocBranch.setAttribute('data-diagram-id', tocTab[i][0]);
-}
-	//Check if item is child
+
 	if (tocTab[i][5] && tocTab[i][6] && tocTab[i][6] != "0")
 	{
 		if (document.getElementById(tocTab[i][6]) == null)
