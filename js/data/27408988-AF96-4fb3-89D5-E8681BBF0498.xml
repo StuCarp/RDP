@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.2:1", "", "ArchiMate-SysML Metamodel", "EARoot/EA2/EA43.htm", "175.png", "152", "0", "", "Logical diagram0","{D5C7F103-1C86-46d3-BEF5-695C9CE945A1}");
-tocTab[tocTab.length] = new Array("0.2.1", "", "Metamodel Elements", "EARoot/EA2/EA1/EA50.htm", "4.png", "", "", "{6E14B39A-B398-49aa-9577-54465965DB46}", "Package");
-tocTab[tocTab.length] = new Array("0.2.2", "1", "ArchiMate Elements", "EARoot/EA2/EA2/EA60.htm", "4.png", "", "", "{C5FA5461-16F9-455d-B1EB-B8B4154F2736}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3", "1", "SysML Elements", "EARoot/EA2/EA3/EA100.htm", "4.png", "", "", "{C79C7925-C006-480c-8889-1919C836DFC5}", "Package");
+tocTab[tocTab.length] = new Array("0.2:1", "", "ArchiMate-SysML Metamodel", "EARoot/EA2/EA43.html", "175.png", "152", "0", "", "Logical diagram0","{D5C7F103-1C86-46d3-BEF5-695C9CE945A1}");
+tocTab[tocTab.length] = new Array("0.2.1", "", "Metamodel Elements", "EARoot/EA2/EA1/EA50.html", "4.png", "", "", "{6E14B39A-B398-49aa-9577-54465965DB46}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2", "1", "ArchiMate Elements", "EARoot/EA2/EA2/EA60.html", "4.png", "", "", "{C5FA5461-16F9-455d-B1EB-B8B4154F2736}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3", "1", "SysML Elements", "EARoot/EA2/EA3/EA100.html", "4.png", "", "", "{C79C7925-C006-480c-8889-1919C836DFC5}", "Package");

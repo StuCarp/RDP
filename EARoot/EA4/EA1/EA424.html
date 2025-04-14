@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>A.04 Rolling Stock Maintenance (RSM) - Yard</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA425.png" usemap="#EA425" border="0" />
+
+<MAP NAME="EA425">
+<area shape="rect" coords="30,42,215,65" href="EA416.html" target="_self">
+<area shape="rect" coords="87,898,243,949" href="./EA1/EA899.html" target="_self">
+<area shape="rect" coords="87,834,243,885" href="./EA1/EA898.html" target="_self">
+<area shape="rect" coords="87,771,243,822" href="./EA1/EA897.html" target="_self">
+<area shape="rect" coords="84,1412,240,1463" href="./EA1/EA906.html" target="_self">
+<area shape="rect" coords="84,1471,240,1522" href="./EA1/EA907.html" target="_self">
+<area shape="rect" coords="295,833,451,884" href="./EA1/EA912.html" target="_self">
+<area shape="rect" coords="294,988,450,1039" href="./EA1/EA914.html" target="_self">
+<area shape="rect" coords="294,1122,450,1173" href="./EA1/EA916.html" target="_self">
+<area shape="rect" coords="295,591,451,642" href="./EA1/EA909.html" target="_self">
+<area shape="rect" coords="295,530,451,581" href="./EA1/EA908.html" target="_self">
+<area shape="rect" coords="87,710,243,761" href="./EA1/EA896.html" target="_self">
+<area shape="rect" coords="87,650,243,701" href="./EA1/EA895.html" target="_self">
+<area shape="rect" coords="295,897,451,948" href="./EA1/EA913.html" target="_self">
+<area shape="rect" coords="294,1047,450,1098" href="./EA1/EA915.html" target="_self">
+<area shape="rect" coords="295,771,451,822" href="./EA1/EA911.html" target="_self">
+<area shape="rect" coords="84,1353,240,1404" href="./EA1/EA905.html" target="_self">
+<area shape="rect" coords="84,1294,240,1345" href="./EA1/EA904.html" target="_self">
+<area shape="rect" coords="84,1117,240,1180" href="./EA1/EA902.html" target="_self">
+<area shape="rect" coords="295,709,451,760" href="./EA1/EA910.html" target="_self">
+<area shape="rect" coords="84,1048,240,1099" href="./EA1/EA901.html" target="_self">
+<area shape="rect" coords="84,988,240,1039" href="./EA1/EA900.html" target="_self">
+<area shape="rect" coords="84,1235,240,1286" href="./EA1/EA903.html" target="_self">
+<area shape="rect" coords="87,590,243,641" href="./EA1/EA894.html" target="_self">
+<area shape="rect" coords="87,530,243,581" href="./EA1/EA893.html" target="_self">
+<area shape="rect" coords="106,66,431,457" href="./EA1/EA1054.html" target="_self">
+<area shape="rect" coords="69,507,259,957" href="EA468.html" target="_self">
+<area shape="rect" coords="69,967,257,1198" href="EA483.html" target="_self">
+<area shape="rect" coords="66,1215,256,1531" href="EA515.html" target="_self">
+<area shape="rect" coords="277,508,467,653" href="EA485.html" target="_self">
+<area shape="rect" coords="277,688,467,953" href="EA508.html" target="_self">
+<area shape="rect" coords="276,964,465,1199" href="EA494.html" target="_self">
+<area shape="rect" coords="10,10,539,1602" href="EA414.html" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">A.04 Rolling Stock Maintenance (RSM) - Yard : SysML Block Definition diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06/02/2025 15:25:39</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">15/04/2025 00:07:38</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Admin</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{F3AFAB04-17ED-4db7-8A7D-8523F44FA40E}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>
