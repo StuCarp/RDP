@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.3.3:1", "", "Business Requirements Specification (BRS)", "EARoot/EA3/EA3/EA184.htm", "175.png", "147", "0", "", "Logical diagram0","{BF8B5783-56CD-424c-9DAD-FE2E93FDFD99}");
-tocTab[tocTab.length] = new Array("0.3.3.1", "1", "BRS Elements", "EARoot/EA3/EA3/EA1/EA189.htm", "4.png", "", "", "{94F48A3C-1520-4d10-8315-7FB6D853138A}", "Package");
+tocTab[tocTab.length] = new Array("0.3.3:1", "", "Business Requirements Specification (BRS)", "EARoot/EA3/EA3/EA189.htm", "175.png", "147", "0", "", "Logical diagram0","{BF8B5783-56CD-424c-9DAD-FE2E93FDFD99}");
+tocTab[tocTab.length] = new Array("0.3.3.1", "1", "BRS Elements", "EARoot/EA3/EA3/EA1/EA194.htm", "4.png", "", "", "{94F48A3C-1520-4d10-8315-7FB6D853138A}", "Package");
