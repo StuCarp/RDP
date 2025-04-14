@@ -1081,7 +1081,11 @@ function toggleItem(item, type)
 
 		if (tableSelTable.childNodes[1].style)
 			tableSelTable.childNodes[1].style.width = (tableSelTable.offsetWidth - 19) + "px";
-	(function () {
+	 }
+}
+
+// Self-executing function for handling link click and tree view highlight
+(function () {
   var originalOnload = window.onload;
   window.onload = function () {
     if (typeof originalOnload === 'function') {
