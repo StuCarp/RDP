@@ -1094,10 +1094,12 @@ function toggleItem(item, type)
 
     function highlightTreeNode(href) {
       try {
-        // Update this selector to match the actual treeview container
+        console.log("highlightTreeNode called with href: " + href);  // Debug log
         var tocLinks = parent.tocFrame.document.querySelectorAll('a[href]');
         tocLinks.forEach(function (link) {
+          console.log("Checking link: " + link.getAttribute('href'));  // Debug log
           if (link.getAttribute('href') === href) {
+            console.log("Highlighting link: " + href);  // Debug log
             link.classList.add('highlight');  // Add 'highlight' class to highlight the link
           } else {
             link.classList.remove('highlight');  // Remove highlight from other links
@@ -1113,13 +1115,15 @@ function toggleItem(item, type)
       if (link.href.startsWith('mailto:') || link.href.includes('#')) return;
 
       link.onclick = function (e) {
-        e.preventDefault();  // Prevent the default link behavior (e.g., opening in a new tab)
+        e.preventDefault();  // Prevent the default link behavior
         var href = link.getAttribute('href');
+        console.log("Link clicked: " + href);  // Debug log
 
-        // Load the content into the iframe (make sure iframe ID matches)
+        // Load the content into the iframe
         var iframe = document.getElementById('linkDocIFrame');
         if (iframe) {
           iframe.src = href;  // Set the src of the iframe to the clicked link's href
+          console.log("Iframe updated to: " + href);  // Debug log
         }
 
         // Highlight the corresponding item in the treeview
@@ -1132,11 +1136,13 @@ function toggleItem(item, type)
       area.onclick = function (e) {
         e.preventDefault();  // Prevent the default behavior
         var href = area.getAttribute('href');
+        console.log("Area clicked: " + href);  // Debug log
 
         // Load the content into the iframe
         var iframe = document.getElementById('linkDocIFrame');
         if (iframe) {
           iframe.src = href;  // Set the src of the iframe to the clicked link's href
+          console.log("Iframe updated to: " + href);  // Debug log
         }
 
         // Highlight the corresponding item in the treeview
@@ -1145,3 +1151,4 @@ function toggleItem(item, type)
     });
   };
 })();
+
