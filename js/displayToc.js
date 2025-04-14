@@ -660,7 +660,6 @@ function tocBuild(data)
 
 function tocBuildItem(i)
 {
-
 	var childItem = false;
 
 	if (tocTab[i][0].indexOf(':') != -1)
@@ -674,6 +673,9 @@ function tocBuildItem(i)
 	else
 		tocBranch = tocRoot;
 
+	// Add the data-diagram-id attribute
+	tocBranch.setAttribute('data-diagram-id', tocTab[i][0]);
+}
 	//Check if item is child
 	if (tocTab[i][5] && tocTab[i][6] && tocTab[i][6] != "0")
 	{
@@ -1082,32 +1084,3 @@ function toggleItem(item, type)
 		if (tableSelTable.childNodes[1].style)
 			tableSelTable.childNodes[1].style.width = (tableSelTable.offsetWidth - 19) + "px";
 	}
-	
-} // closes bulkshow()
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Find all content area links that reference a section
-    const contentLinks = document.querySelectorAll(".PageBody a[href^='#']");
-
-    contentLinks.forEach(link => {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute("href").replace("#", "");
-
-            console.log("Clicked link to:", targetId); // ✅ Console log
-
-            // Scroll the content area to the section
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
-
-            // Highlight the corresponding TOC entry on the left
-            const tocItem = document.querySelector(`#TableGroup li[id='${targetId}Title']`);
-            if (tocItem) {
-                toggleItem(targetId);  // ✅ This calls your existing highlight code
-            }
-        });
-    });
-});
