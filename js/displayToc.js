@@ -1082,7 +1082,6 @@ function toggleItem(item, type)
 		if (tableSelTable.childNodes[1].style)
 			tableSelTable.childNodes[1].style.width = (tableSelTable.offsetWidth - 19) + "px";
 	}
-	};
 	
 } // closes bulkshow()
 
