@@ -1081,6 +1081,7 @@ function toggleItem(item, type)
 
 		if (tableSelTable.childNodes[1].style)
 			tableSelTable.childNodes[1].style.width = (tableSelTable.offsetWidth - 19) + "px";
+	}
 	};
 	
 } // closes bulkshow()
@@ -1095,6 +1096,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const targetId = this.getAttribute("href").replace("#", "");
 
+            console.log("Clicked link to:", targetId); // ✅ Console log
+
             // Scroll the content area to the section
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
@@ -1104,7 +1107,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Highlight the corresponding TOC entry on the left
             const tocItem = document.querySelector(`#TableGroup li[id='${targetId}Title']`);
             if (tocItem) {
-                toggleItem(targetId);  // This is your existing function
+                toggleItem(targetId);  // ✅ This calls your existing highlight code
             }
         });
     });
