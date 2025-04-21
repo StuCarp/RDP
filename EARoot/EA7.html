@@ -1,120 +1,44 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>A.02 Rolling Stock - BEL</title>
-<link href="../css/ea.css" rel="stylesheet" type="text/css" />
-<script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
-}
-
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>System Architecture</title>
+  <link href="../css/ea.css" rel="stylesheet" type="text/css" />
+  <script>
+    function highlightNode(targetHref) {
+      const links = document.querySelectorAll('a');
+      for (const link of links) {
+        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
+        const target = targetHref.replace(/.*\//, '');
+        if (linkHref === target) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          link.style.backgroundColor = '#ffd'; // highlight color
+          break;
+        }
+      }
+    }
+  </script>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="PageBody">
+<body onload="tocInit()">
+  <div class="PageBody">
 	
 <img src="EA8.png" usemap="#EA8" border="0" />
 
 <MAP NAME="EA8">
-<area shape="rect" coords="30,43,217,66" href="EA3.html" target="_self">
-<area shape="rect" coords="49,2107,387,2139" href="./EA1/EA329.html" target="_self">
-<area shape="rect" coords="453,1952,791,1984" href="./EA1/EA355.html" target="_self">
-<area shape="rect" coords="453,1915,791,1947" href="./EA1/EA354.html" target="_self">
-<area shape="rect" coords="453,1878,791,1910" href="./EA1/EA353.html" target="_self">
-<area shape="rect" coords="453,1841,791,1873" href="./EA1/EA352.html" target="_self">
-<area shape="rect" coords="453,1804,791,1836" href="./EA1/EA351.html" target="_self">
-<area shape="rect" coords="457,1736,795,1768" href="./EA1/EA350.html" target="_self">
-<area shape="rect" coords="457,1638,795,1670" href="./EA1/EA348.html" target="_self">
-<area shape="rect" coords="457,1601,795,1633" href="./EA1/EA347.html" target="_self">
-<area shape="rect" coords="457,1564,795,1596" href="./EA1/EA346.html" target="_self">
-<area shape="rect" coords="457,1527,795,1559" href="./EA1/EA345.html" target="_self">
-<area shape="rect" coords="457,1490,795,1522" href="./EA1/EA344.html" target="_self">
-<area shape="rect" coords="457,1453,795,1485" href="./EA1/EA343.html" target="_self">
-<area shape="rect" coords="457,1416,795,1448" href="./EA1/EA342.html" target="_self">
-<area shape="rect" coords="458,1678,796,1710" href="./EA1/EA349.html" target="_self">
-<area shape="rect" coords="458,1313,796,1345" href="./EA1/EA340.html" target="_self">
-<area shape="rect" coords="458,1276,796,1308" href="./EA1/EA339.html" target="_self">
-<area shape="rect" coords="458,1239,796,1271" href="./EA1/EA338.html" target="_self">
-<area shape="rect" coords="458,1202,796,1234" href="./EA1/EA337.html" target="_self">
-<area shape="rect" coords="458,1165,796,1197" href="./EA1/EA336.html" target="_self">
-<area shape="rect" coords="458,1351,796,1383" href="./EA1/EA341.html" target="_self">
-<area shape="rect" coords="455,1042,793,1074" href="./EA1/EA334.html" target="_self">
-<area shape="rect" coords="455,1005,793,1037" href="./EA1/EA333.html" target="_self">
-<area shape="rect" coords="455,931,793,963" href="./EA1/EA331.html" target="_self">
-<area shape="rect" coords="455,894,793,926" href="./EA1/EA330.html" target="_self">
-<area shape="rect" coords="455,1079,793,1111" href="./EA1/EA335.html" target="_self">
-<area shape="rect" coords="453,1989,791,2022" href="./EA1/EA356.html" target="_self">
-<area shape="rect" coords="49,2069,387,2101" href="./EA1/EA328.html" target="_self">
-<area shape="rect" coords="49,2032,387,2064" href="./EA1/EA327.html" target="_self">
-<area shape="rect" coords="49,1995,387,2027" href="./EA1/EA326.html" target="_self">
-<area shape="rect" coords="49,1958,387,1990" href="./EA1/EA325.html" target="_self">
-<area shape="rect" coords="49,1921,387,1953" href="./EA1/EA324.html" target="_self">
-<area shape="rect" coords="49,1884,387,1916" href="./EA1/EA323.html" target="_self">
-<area shape="rect" coords="47,1810,385,1842" href="./EA1/EA322.html" target="_self">
-<area shape="rect" coords="47,1773,385,1805" href="./EA1/EA321.html" target="_self">
-<area shape="rect" coords="47,1736,385,1768" href="./EA1/EA320.html" target="_self">
-<area shape="rect" coords="47,1699,385,1731" href="./EA1/EA319.html" target="_self">
-<area shape="rect" coords="47,1662,385,1694" href="./EA1/EA318.html" target="_self">
-<area shape="rect" coords="47,1625,385,1657" href="./EA1/EA317.html" target="_self">
-<area shape="rect" coords="47,1588,385,1620" href="./EA1/EA316.html" target="_self">
-<area shape="rect" coords="47,1551,385,1583" href="./EA1/EA315.html" target="_self">
-<area shape="rect" coords="47,1514,385,1546" href="./EA1/EA314.html" target="_self">
-<area shape="rect" coords="47,1477,385,1509" href="./EA1/EA313.html" target="_self">
-<area shape="rect" coords="47,1440,385,1472" href="./EA1/EA312.html" target="_self">
-<area shape="rect" coords="47,1403,385,1435" href="./EA1/EA311.html" target="_self">
-<area shape="rect" coords="47,1366,385,1398" href="./EA1/EA310.html" target="_self">
-<area shape="rect" coords="47,1329,385,1361" href="./EA1/EA309.html" target="_self">
-<area shape="rect" coords="45,1256,383,1288" href="./EA1/EA308.html" target="_self">
-<area shape="rect" coords="45,1219,383,1251" href="./EA1/EA307.html" target="_self">
-<area shape="rect" coords="45,1182,383,1214" href="./EA1/EA306.html" target="_self">
-<area shape="rect" coords="45,1145,383,1177" href="./EA1/EA305.html" target="_self">
-<area shape="rect" coords="45,1108,383,1140" href="./EA1/EA304.html" target="_self">
-<area shape="rect" coords="43,1035,381,1067" href="./EA1/EA303.html" target="_self">
-<area shape="rect" coords="43,998,381,1030" href="./EA1/EA302.html" target="_self">
-<area shape="rect" coords="43,961,381,993" href="./EA1/EA301.html" target="_self">
-<area shape="rect" coords="43,892,381,924" href="./EA1/EA300.html" target="_self">
-<area shape="rect" coords="455,968,793,1000" href="./EA1/EA332.html" target="_self">
-<area shape="rect" coords="213,43,606,860" href="./EA1/EA660.html" target="_self">
-<area shape="rect" coords="31,941,395,1080" href="EA68.html" target="_self">
-<area shape="rect" coords="31,1085,395,1297" href="EA113.html" target="_self">
-<area shape="rect" coords="31,1306,395,1849" href="EA91.html" target="_self">
-<area shape="rect" coords="31,1864,395,2149" href="EA97.html" target="_self">
-<area shape="rect" coords="443,875,811,1120" href="EA103.html" target="_self">
-<area shape="rect" coords="443,1143,811,1388" href="EA71.html" target="_self">
-<area shape="rect" coords="443,1395,811,1721" href="EA77.html" target="_self">
-<area shape="rect" coords="439,1782,807,2033" href="EA78.html" target="_self">
-<area shape="rect" coords="10,10,848,2198" href="EA1.html" target="_self">
+<area shape="rect" coords="235,82,405,197" href="EA9.html" target="_self">
+<area shape="rect" coords="12,10,77,33" href="EA1.html" target="_self">
+<area shape="rect" coords="10,34,571,65" href="EA23.html" target="_self">
 </MAP>
 
-	<div class="ObjectTitle">A.02 Rolling Stock - BEL : SysML Block Definition diagram</div>
+	<div class="ObjectTitle">System Architecture : Package diagram</div>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">06/02/2025 15:16:30</td>
+			<td width="85%" class="ObjectDetailsValue">12/04/2025 16:20:06</td>
 		</tr>
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
-			<td width="85%" class="ObjectDetailsValue">15/04/2025 00:07:45</td>
+			<td width="85%" class="ObjectDetailsValue">14/04/2025 11:43:02</td>
 		</tr>
 		<tr style="padding-top: 10px;">
 			<td width="15%" class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
@@ -134,11 +58,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
-			<td width="85%" class="ObjectDetailsValue">{80D81974-6387-4661-B88E-8ABFE5A7ED58}</td>
+			<td width="85%" class="ObjectDetailsValue">{7C38978E-5B4B-4722-B721-885BF60A2BF4}</td>
 		</tr>
 	</table>
 	
 </div>
- 
+
 </body>
 </html>

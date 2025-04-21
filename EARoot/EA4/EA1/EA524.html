@@ -1,48 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Traction Substation</title>
-<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
-<script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
-}
-
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Security</title>
+  <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+  <script>
+    function highlightNode(targetHref) {
+      const links = document.querySelectorAll('a');
+      for (const link of links) {
+        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
+        const target = targetHref.replace(/.*\//, '');
+        if (linkHref === target) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          link.style.backgroundColor = '#ffd'; // highlight color
+          break;
+        }
+      }
+    }
+  </script>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="tocInit()">
+  <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Traction Substation", " : "))</script>  : Public   Boundary</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Security", " : "))</script>  : Public   Boundary</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">13/04/2025 13:32:02</td>
+			<td width="85%" class="ObjectDetailsValue">14/02/2025 10:05:48</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">13/04/2025 13:32:41</td>
+			<td class="ObjectDetailsValue">13/02/2025 20:10:54</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,15 +76,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{EA102143-9CC9-4400-A115-C3ADD4596CEE}</td>
+			<td class="ObjectDetailsValue">{9C992975-550F-47f7-9629-FDCE85F6B8C7}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA436.html">A.10 Traction Power</a></td>
+			<td class="ObjectDetailsValue"><a href="EA435.html">A.07 Provisioning - Building</a></td>
 		</tr>
 	</table>
 	
 <div class="pageFooter"></div>
- 
+
 </body>
 </html>

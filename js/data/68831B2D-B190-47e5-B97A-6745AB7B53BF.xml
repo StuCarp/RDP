@@ -1,4 +1,4 @@
 tocTab[tocTab.length] = new Array("0.1", "1", "Navigation Pages", "EARoot/EA1/EA11.html", "31.png", "", "", "{082DF6EF-BE2C-4078-A329-94220152D745}", "Package");
 tocTab[tocTab.length] = new Array("0.2", "1", "Metamodel", "EARoot/EA2/EA45.html", "34.png", "", "", "{27408988-AF96-4fb3-89D5-E8681BBF0498}", "Package");
 tocTab[tocTab.length] = new Array("0.3", "1", "ArchiMate 3.1 Project", "EARoot/EA3/EA108.html", "34.png", "", "", "{6DAFA144-E939-4844-8D6D-90A7953BC29F}", "Package");
-tocTab[tocTab.length] = new Array("0.4", "1", "MBSE Project (SysML)", "EARoot/EA4/EA411.html", "34.png", "", "", "{0F67F503-2CEF-4fcc-82D0-39658CEBD5B9}", "Package");
+tocTab[tocTab.length] = new Array("0.4", "1", "MBSE Project (SysML)", "EARoot/EA4/EA413.html", "34.png", "", "", "{0F67F503-2CEF-4fcc-82D0-39658CEBD5B9}", "Package");

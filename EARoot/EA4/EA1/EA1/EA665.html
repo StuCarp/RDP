@@ -1,48 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Subsystem: A.02.11 Radio</title>
-<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-<script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
-}
-
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Subsystem: A.02.06 Spare Knuckle Holders</title>
+  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+  <script>
+    function highlightNode(targetHref) {
+      const links = document.querySelectorAll('a');
+      for (const link of links) {
+        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
+        const target = targetHref.replace(/.*\//, '');
+        if (linkHref === target) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          link.style.backgroundColor = '#ffd'; // highlight color
+          break;
+        }
+      }
+    }
+  </script>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="tocInit()">
+  <div class="pageHeader"></div>
 <div class="PageBody">
-	<div id="name_classifier" style="display: none;"><a href="EA722.html">«block» A.02.11 Radio</a></div>
+	<div id="name_classifier" style="display: none;"><a href="EA722.html">«block» A.02.06 Spare Knuckle Holders</a></div>
 	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Subsystem", " : "))</script>  : Public   Property</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">05/02/2025 16:18:06</td>
+			<td width="85%" class="ObjectDetailsValue">13/02/2025 14:13:01</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">05/02/2025 16:21:50</td>
+			<td class="ObjectDetailsValue">13/02/2025 15:05:18</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,7 +76,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{035AFC43-A6DF-4f2e-BA5A-BB0E58D0817B}</td>
+			<td class="ObjectDetailsValue">{CEA1E683-B7D5-4bdf-A9AC-4637F98F0385}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
@@ -159,6 +148,6 @@ function nameClassifier(name, separator)
 			</table>
 		</div>	</div>
 <div class="pageFooter"></div>
- 
+
 </body>
 </html>

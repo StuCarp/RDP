@@ -1,37 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Application Components Viewpoint</title>
-<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
-<script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
-}
-
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Application Components Viewpoint</title>
+  <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+  <script>
+    function highlightNode(targetHref) {
+      const links = document.querySelectorAll('a');
+      for (const link of links) {
+        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
+        const target = targetHref.replace(/.*\//, '');
+        if (linkHref === target) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          link.style.backgroundColor = '#ffd'; // highlight color
+          break;
+        }
+      }
+    }
+  </script>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="PageBody">
+<body onload="tocInit()">
+  <div class="PageBody">
 	
 <img src="EA309.png" usemap="#EA309" border="0" />
 
@@ -104,8 +93,8 @@ function nameClassifier(name, separator)
 <area shape="rect" coords="310,383,400,453" href="./EA1/EA346.html" target="_self">
 <area shape="rect" coords="160,383,250,453" href="./EA1/EA345.html" target="_self">
 <area shape="rect" coords="760,273,850,343" href="./EA1/EA344.html" target="_self">
-<area shape="rect" coords="10,383,100,453" href="./EA1/EA343.html" target="_self">
-<area shape="rect" coords="1360,273,1450,343" href="./EA1/EA342.html" target="_self">
+<area shape="rect" coords="10,383,100,453" href="./EA1/EA342.html" target="_self">
+<area shape="rect" coords="1360,273,1450,343" href="./EA1/EA343.html" target="_self">
 <area shape="rect" coords="1210,273,1300,343" href="./EA1/EA341.html" target="_self">
 <area shape="rect" coords="1060,273,1150,343" href="./EA1/EA340.html" target="_self">
 <area shape="rect" coords="910,273,1000,343" href="./EA1/EA339.html" target="_self">
@@ -169,6 +158,6 @@ function nameClassifier(name, separator)
 	</table>
 	
 </div>
- 
+
 </body>
 </html>

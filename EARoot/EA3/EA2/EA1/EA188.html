@@ -1,37 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Capability Elements::CAP26 Performance Monitoring & Optimisation::CAP6 Reliability, Availability and Maintainability (RAM)</title>
-<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-<script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
-}
-
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Capability Elements::CAP26 Performance Monitoring & Optimisation::CAP6 Reliability, Availability and Maintainability (RAM)</title>
+  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+  <script>
+    function highlightNode(targetHref) {
+      const links = document.querySelectorAll('a');
+      for (const link of links) {
+        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
+        const target = targetHref.replace(/.*\//, '');
+        if (linkHref === target) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          link.style.backgroundColor = '#ffd'; // highlight color
+          break;
+        }
+      }
+    }
+  </script>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="tocInit()">
+  <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
 	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CAP6 Reliability, Availability and Maintainability (RAM)", " : "))</script>  : Public  &lt;&lt;ArchiMate_Capability&gt;&gt; Capability</span>
@@ -110,7 +99,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA235.html">«ArchiMate_Requirement» RDP-BRS-067 The Rail Decarbonisation System shall maintain or improve Current System recovery time from Incidents</a><br />
+						<a href="../../EA3/EA1/EA236.html">«ArchiMate_Requirement» RDP-BRS-068 The Rail Decarbonisation System shall not increase the frequency of out of service locomotives per equivalent annual tonnage</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -133,7 +122,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA285.html">«ArchiMate_Requirement» RDP-BRS-081 The Rail Decarbonisation System shall be supportable throughout the economic life</a><br />
+						<a href="../../EA3/EA1/EA218.html">«ArchiMate_Requirement» RDP-BRS-043 The Rail Decarbonisation System shall provide training facilites for Nominated Staff supporting BEL migration demand and catering for the appropriate skill level and competency management requirements</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -156,7 +145,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA200.html">«ArchiMate_Requirement» RDP-BRS-010 Track shall support the increased weight and performance profile of Battery Electric Locomotives in Normal, Abnormal, Degraded and Emergency Mode operation.</a><br />
+						<a href="../../EA3/EA1/EA222.html">«ArchiMate_Requirement» RDP-BRS-047 The Rail Decarbonisation System shall produce rules and procedures for Normal Mode, Abnormal Mode, Degraded Mode operations and Emergency Mode operations</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -179,7 +168,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA264.html">«ArchiMate_Requirement» RDP-BRS-031 The Rail Decarbonisation System shall enable remote monitoring of BEL Battery Energy Consumption via the Fortescue Hive</a><br />
+						<a href="../../EA3/EA1/EA198.html">«ArchiMate_Requirement» RDP-BRS-005 The Rail Decarbonisation System shall support Sprint Running at the level provided by the Current System</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -202,7 +191,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA203.html">«ArchiMate_Requirement» RDP-BRS-016 The Rail Decarbonisation System shall provide Rollingstock Maintenance facilities that are configurable to accommodate Hybrid Operations</a><br />
+						<a href="../../EA3/EA1/EA211.html">«ArchiMate_Requirement» RDP-BRS-036 The Rail Decarbonisation System shall provide Rollingstock Maintenance Facilities that maintain BEL vehicles</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -225,7 +214,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA236.html">«ArchiMate_Requirement» RDP-BRS-068 The Rail Decarbonisation System shall not increase the frequency of out of service locomotives per equivalent annual tonnage</a><br />
+						<a href="../../EA3/EA1/EA221.html">«ArchiMate_Requirement» RDP-BRS-046 The Rail Decarbonisation System shall ensure training needs analysis are carried out to support future BEL migration demand</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -248,7 +237,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA221.html">«ArchiMate_Requirement» RDP-BRS-046 The Rail Decarbonisation System shall ensure training needs analysis are carried out to support future BEL migration demand</a><br />
+						<a href="../../EA3/EA1/EA220.html">«ArchiMate_Requirement» RDP-BRS-045 The Rail Decarbonisation System shall assess and identify the changes needed to current Maintenance Procedures</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -271,7 +260,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA263.html">«ArchiMate_Requirement» RDP-BRS-030 The Rail Decarbonisation System shall provide remote health monitoring, diagnostics, and event recording in support of failure rectification, preventative maintenance, incident investigation</a><br />
+						<a href="../../EA3/EA1/EA219.html">«ArchiMate_Requirement» RDP-BRS-044 The Rail Decarbonisation System shall assess and identify the changes needed to current operational rules and procedures for the Fortescue rail network and all other impacted interfacing systems</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -294,7 +283,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA196.html">«ArchiMate_Requirement» RDP-BRS-002 The Rail Decarbonisation System shall maintain 192 Mtpa of annual tonnage</a><br />
+						<a href="../../EA3/EA1/EA233.html">«ArchiMate_Requirement» RDP-BRS-065 The Rail Decarbonisation System shall provide a high level of Availability to ensure 192 Mtpa annual tonnage is achieved, with the specific percentage target to be determined during the System Definition phase based on operational needs and...</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -317,7 +306,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA238.html">«ArchiMate_Requirement» RDP-BRS-072 The Rail Decarbonisation System shall not impact the functionality and operability of the TLO and TUL operations</a><br />
+						<a href="../../EA3/EA1/EA200.html">«ArchiMate_Requirement» RDP-BRS-010 Track shall support the increased weight and performance profile of Battery Electric Locomotives in Normal, Abnormal, Degraded and Emergency Mode operation.</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -340,7 +329,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA211.html">«ArchiMate_Requirement» RDP-BRS-036 The Rail Decarbonisation System shall provide Rollingstock Maintenance Facilities that maintain BEL vehicles</a><br />
+						<a href="../../EA3/EA1/EA264.html">«ArchiMate_Requirement» RDP-BRS-031 The Rail Decarbonisation System shall enable remote monitoring of BEL Battery Energy Consumption via the Fortescue Hive</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -363,7 +352,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA233.html">«ArchiMate_Requirement» RDP-BRS-065 The Rail Decarbonisation System shall provide a high level of Availability to ensure 192 Mtpa annual tonnage is achieved, with the specific percentage target to be determined during the System Definition phase based on operational needs and...</a><br />
+						<a href="../../EA3/EA1/EA237.html">«ArchiMate_Requirement» RDP-BRS-071 The Rail Decarbonisation System enabling technology shall be supportable over the lifetime of the system</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -386,8 +375,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA176.html">«ArchiMate_Capability» CAP26 Performance Monitoring & Optimisation</a><br />
-						Capability «ArchiMate_Composition» 
+						<a href="../../EA3/EA1/EA227.html">«ArchiMate_Requirement» RDP-BRS-052 The Rail Decarbonisation System shall enable Nominated Staff to perform Maintenance activities competently</a><br />
+						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -409,7 +398,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA218.html">«ArchiMate_Requirement» RDP-BRS-043 The Rail Decarbonisation System shall provide training facilites for Nominated Staff supporting BEL migration demand and catering for the appropriate skill level and competency management requirements</a><br />
+						<a href="../../EA3/EA1/EA228.html">«ArchiMate_Requirement» RDP-BRS-053 The Rail Decarbonisation System shall enable Nominated Staff to perform Operation activities competently</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -432,7 +421,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA220.html">«ArchiMate_Requirement» RDP-BRS-045 The Rail Decarbonisation System shall assess and identify the changes needed to current Maintenance Procedures</a><br />
+						<a href="../../EA3/EA1/EA238.html">«ArchiMate_Requirement» RDP-BRS-072 The Rail Decarbonisation System shall not impact the functionality and operability of the TLO and TUL operations</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -455,8 +444,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA228.html">«ArchiMate_Requirement» RDP-BRS-053 The Rail Decarbonisation System shall enable Nominated Staff to perform Operation activities competently</a><br />
-						Requirement «ArchiMate_Association» 
+						<a href="EA176.html">«ArchiMate_Capability» CAP26 Performance Monitoring & Optimisation</a><br />
+						Capability «ArchiMate_Composition» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -478,7 +467,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA237.html">«ArchiMate_Requirement» RDP-BRS-071 The Rail Decarbonisation System enabling technology shall be supportable over the lifetime of the system</a><br />
+						<a href="../../EA3/EA1/EA285.html">«ArchiMate_Requirement» RDP-BRS-081 The Rail Decarbonisation System shall be supportable throughout the economic life</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -501,7 +490,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA227.html">«ArchiMate_Requirement» RDP-BRS-052 The Rail Decarbonisation System shall enable Nominated Staff to perform Maintenance activities competently</a><br />
+						<a href="../../EA3/EA1/EA235.html">«ArchiMate_Requirement» RDP-BRS-067 The Rail Decarbonisation System shall maintain or improve Current System recovery time from Incidents</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -524,7 +513,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA219.html">«ArchiMate_Requirement» RDP-BRS-044 The Rail Decarbonisation System shall assess and identify the changes needed to current operational rules and procedures for the Fortescue rail network and all other impacted interfacing systems</a><br />
+						<a href="../../EA3/EA1/EA203.html">«ArchiMate_Requirement» RDP-BRS-016 The Rail Decarbonisation System shall provide Rollingstock Maintenance facilities that are configurable to accommodate Hybrid Operations</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -547,7 +536,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA222.html">«ArchiMate_Requirement» RDP-BRS-047 The Rail Decarbonisation System shall produce rules and procedures for Normal Mode, Abnormal Mode, Degraded Mode operations and Emergency Mode operations</a><br />
+						<a href="../../EA3/EA1/EA196.html">«ArchiMate_Requirement» RDP-BRS-002 The Rail Decarbonisation System shall maintain 192 Mtpa of annual tonnage</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -593,7 +582,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA198.html">«ArchiMate_Requirement» RDP-BRS-005 The Rail Decarbonisation System shall support Sprint Running at the level provided by the Current System</a><br />
+						<a href="../../EA3/EA1/EA263.html">«ArchiMate_Requirement» RDP-BRS-030 The Rail Decarbonisation System shall provide remote health monitoring, diagnostics, and event recording in support of failure rectification, preventative maintenance, incident investigation</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -650,14 +639,14 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA128.html">«ArchiMate_Goal» GL6 Enhance the reliability and availability of the rail network and fleet through optimised maintenance, reduced downtime, and improved system resilience to ensure consistent performance.</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA124.html">«ArchiMate_Goal» GL2 Maintain 192 Mtpa of annual tonnage as a baseline.</a></td>
 					<td width="10%" class="TableRow" valign="top">Goal</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA124.html">«ArchiMate_Goal» GL2 Maintain 192 Mtpa of annual tonnage as a baseline.</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA128.html">«ArchiMate_Goal» GL6 Enhance the reliability and availability of the rail network and fleet through optimised maintenance, reduced downtime, and improved system resilience to ensure consistent performance.</a></td>
 					<td width="10%" class="TableRow" valign="top">Goal</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
@@ -668,6 +657,6 @@ function nameClassifier(name, separator)
 		</div>
 	</div>
 <div class="pageFooter"></div>
- 
+
 </body>
 </html>

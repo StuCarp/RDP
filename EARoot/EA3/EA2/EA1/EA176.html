@@ -1,37 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Capability Elements::CAP26 Performance Monitoring & Optimisation</title>
-<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-<script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
-}
-
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Capability Elements::CAP26 Performance Monitoring & Optimisation</title>
+  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+  <script>
+    function highlightNode(targetHref) {
+      const links = document.querySelectorAll('a');
+      for (const link of links) {
+        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
+        const target = targetHref.replace(/.*\//, '');
+        if (linkHref === target) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          link.style.backgroundColor = '#ffd'; // highlight color
+          break;
+        }
+      }
+    }
+  </script>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="tocInit()">
+  <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
 	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CAP26 Performance Monitoring & Optimisation", " : "))</script>  : Public  &lt;&lt;ArchiMate_Capability&gt;&gt; Capability</span>
@@ -167,7 +156,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA261.html">«ArchiMate_Requirement» RDP-BRS-028 The Rail Decarbonisation System shall provide train control appropriate for the BEL, to facilitate controlled operation over all specified scheduled routes</a><br />
+						<a href="../../EA3/EA1/EA264.html">«ArchiMate_Requirement» RDP-BRS-031 The Rail Decarbonisation System shall enable remote monitoring of BEL Battery Energy Consumption via the Fortescue Hive</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -190,7 +179,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA260.html">«ArchiMate_Requirement» RDP-BRS-027 The Rail Decarbonisation System shall provide Near Real-Time data for use by Green Supply to assist in the modelling of Rail Network energy consumption and demand</a><br />
+						<a href="../../EA3/EA1/EA261.html">«ArchiMate_Requirement» RDP-BRS-028 The Rail Decarbonisation System shall provide train control appropriate for the BEL, to facilitate controlled operation over all specified scheduled routes</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -213,7 +202,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA264.html">«ArchiMate_Requirement» RDP-BRS-031 The Rail Decarbonisation System shall enable remote monitoring of BEL Battery Energy Consumption via the Fortescue Hive</a><br />
+						<a href="../../EA3/EA1/EA260.html">«ArchiMate_Requirement» RDP-BRS-027 The Rail Decarbonisation System shall provide Near Real-Time data for use by Green Supply to assist in the modelling of Rail Network energy consumption and demand</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -293,14 +282,14 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA124.html">«ArchiMate_Goal» GL2 Maintain 192 Mtpa of annual tonnage as a baseline.</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA128.html">«ArchiMate_Goal» GL6 Enhance the reliability and availability of the rail network and fleet through optimised maintenance, reduced downtime, and improved system resilience to ensure consistent performance.</a></td>
 					<td width="10%" class="TableRow" valign="top">Goal</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA128.html">«ArchiMate_Goal» GL6 Enhance the reliability and availability of the rail network and fleet through optimised maintenance, reduced downtime, and improved system resilience to ensure consistent performance.</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA124.html">«ArchiMate_Goal» GL2 Maintain 192 Mtpa of annual tonnage as a baseline.</a></td>
 					<td width="10%" class="TableRow" valign="top">Goal</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
@@ -311,6 +300,6 @@ function nameClassifier(name, separator)
 		</div>
 	</div>
 <div class="pageFooter"></div>
- 
+
 </body>
 </html>

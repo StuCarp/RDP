@@ -1,37 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ArchiMate-SysML Metamodel</title>
-<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
-<script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
-}
-
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>ArchiMate-SysML Metamodel</title>
+  <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+  <script>
+    function highlightNode(targetHref) {
+      const links = document.querySelectorAll('a');
+      for (const link of links) {
+        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
+        const target = targetHref.replace(/.*\//, '');
+        if (linkHref === target) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          link.style.backgroundColor = '#ffd'; // highlight color
+          break;
+        }
+      }
+    }
+  </script>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="PageBody">
+<body onload="tocInit()">
+  <div class="PageBody">
 	
 <img src="EA44.png" usemap="#EA44" border="0" />
 
@@ -41,11 +30,11 @@ function nameClassifier(name, separator)
 <area shape="rect" coords="153,450,258,520" href="./EA2/EA6/EA90.html" target="_self">
 <area shape="rect" coords="999,838,1089,900" href="./EA3/EA105.html" target="_self">
 <area shape="rect" coords="733,814,778,904" href="./EA3/EA101.html" target="_self">
-<area shape="rect" coords="826,677,941,745" href="./EA1/EA54.html" target="_self">
+<area shape="rect" coords="826,677,941,745" href="./EA1/EA51.html" target="_self">
 <area shape="rect" coords="710,675,800,745" href="./EA3/EA103.html" target="_self">
-<area shape="rect" coords="828,450,943,581" href="./EA1/EA51.html" target="_self">
+<area shape="rect" coords="828,450,943,581" href="./EA1/EA54.html" target="_self">
 <area shape="rect" coords="711,450,801,520" href="./EA3/EA102.html" target="_self">
-<area shape="rect" coords="498,719,588,768" href="./EA2/EA6/EA98.html" target="_self">
+<area shape="rect" coords="498,719,588,768" href="./EA2/EA6/EA99.html" target="_self">
 <area shape="rect" coords="498,790,588,836" href="./EA2/EA6/EA96.html" target="_self">
 <area shape="rect" coords="498,857,588,901" href="./EA2/EA6/EA97.html" target="_self">
 <area shape="rect" coords="352,450,452,520" href="./EA2/EA6/EA89.html" target="_self">
@@ -60,8 +49,8 @@ function nameClassifier(name, separator)
 <area shape="rect" coords="56,674,636,923" href="./EA1/EA56.html" target="_self">
 <area shape="rect" coords="10,40,649,175" href="./EA1/EA58.html" target="_self">
 <area shape="rect" coords="657,406,974,955" href="./EA1/EA59.html" target="_self">
-<area shape="rect" coords="679,441,958,595" href="./EA1/EA52.html" target="_self">
-<area shape="rect" coords="677,663,956,924" href="./EA1/EA53.html" target="_self">
+<area shape="rect" coords="679,441,958,595" href="./EA1/EA53.html" target="_self">
+<area shape="rect" coords="677,663,956,924" href="./EA1/EA52.html" target="_self">
 <area shape="rect" coords="55,421,275,547" href="./EA1/EA57.html" target="_self">
 <area shape="rect" coords="10,182,649,956" href="./EA1/EA55.html" target="_self">
 </MAP>
@@ -99,6 +88,6 @@ function nameClassifier(name, separator)
 	</table>
 	
 </div>
- 
+
 </body>
 </html>

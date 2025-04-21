@@ -1,48 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>System Breakdown Structure Elements::A. Rail Decarbonisation System::A.08 Signalling and Control::A.08.20 Mobile Data Comms</title>
-<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-<script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
-}
-
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>System Breakdown Structure Elements::A. Rail Decarbonisation System::A.08 Signalling and Control::A.08.15 Wheel Impact Load Detector (WILD)</title>
+  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+  <script>
+    function highlightNode(targetHref) {
+      const links = document.querySelectorAll('a');
+      for (const link of links) {
+        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
+        const target = targetHref.replace(/.*\//, '');
+        if (linkHref === target) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          link.style.backgroundColor = '#ffd'; // highlight color
+          break;
+        }
+      }
+    }
+  </script>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="tocInit()">
+  <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("A.08.20 Mobile Data Comms", " : "))</script>  : Public  &lt;&lt;block&gt;&gt; Block</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("A.08.15 Wheel Impact Load Detector (WILD)", " : "))</script>  : Public  &lt;&lt;block&gt;&gt; Block</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">05/02/2025 20:25:54</td>
+			<td width="85%" class="ObjectDetailsValue">14/02/2025 17:21:09</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">17/04/2025 10:35:56</td>
+			<td class="ObjectDetailsValue">17/04/2025 10:35:22</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,11 +76,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{794F0D4C-32EB-4f01-8D33-578A33D149E3}</td>
+			<td class="ObjectDetailsValue">{346B0324-5B9C-4c07-9FEB-C407D8D27E4E}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA414.html">00 Full System Breakdown Structure</a>, <a href="../EA432.html">A.08 Signalling and Control</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA419.html">00 Full System Breakdown Structure</a>, <a href="../EA437.html">A.08 Signalling and Control</a></td>
 		</tr>
 	</table>
 	
@@ -111,7 +100,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA1078.html">«block» A.08 Signalling and Control</a><br />
+						<a href="EA1083.html">«block» A.08 Signalling and Control</a><br />
 						Block &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -125,8 +114,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2135" onclick="parent.toggleDiv('detailsDIVLink2135','DetailsImageLink2135')" />Details:
-							<div id="detailsDIVLink2135" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2110" onclick="parent.toggleDiv('detailsDIVLink2110','DetailsImageLink2110')" />Details:
+							<div id="detailsDIVLink2110" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -147,20 +136,20 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2136" onclick="parent.toggleDiv('detailsDIVScenario2136','DetailsImageScenario2136')" />Details:
-						<div id="detailsDIVScenario2136" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2111" onclick="parent.toggleDiv('detailsDIVScenario2111','DetailsImageScenario2111')" />Details:
+						<div id="detailsDIVScenario2111" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">Subsystem Group</td>
-				<td width="50%" class="TableRow" valign="top">SCADA and Communications Equipment</td>
+				<td width="50%" class="TableRow" valign="top">Asset Protection Systems</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2137" onclick="parent.toggleDiv('detailsDIVScenario2137','DetailsImageScenario2137')" />Details:
-						<div id="detailsDIVScenario2137" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2112" onclick="parent.toggleDiv('detailsDIVScenario2112','DetailsImageScenario2112')" />Details:
+						<div id="detailsDIVScenario2112" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -171,8 +160,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2138" onclick="parent.toggleDiv('detailsDIVScenario2138','DetailsImageScenario2138')" />Details:
-						<div id="detailsDIVScenario2138" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2113" onclick="parent.toggleDiv('detailsDIVScenario2113','DetailsImageScenario2113')" />Details:
+						<div id="detailsDIVScenario2113" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -207,7 +196,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1078.html">«block» A.08 Signalling and Control</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1083.html">«block» A.08 Signalling and Control</a></td>
 					<td width="10%" class="TableRow" valign="top">Block</td>
 					<td width="10%" class="TableRow" valign="top">Strong</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
@@ -218,6 +207,6 @@ function nameClassifier(name, separator)
 		</div>
 	</div>
 <div class="pageFooter"></div>
- 
+
 </body>
 </html>

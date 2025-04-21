@@ -1,67 +1,43 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>A.01 Overhead Line Equipment (OLE)</title>
-<link href="../css/ea.css" rel="stylesheet" type="text/css" />
-<script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
-}
-
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Capability Mapping</title>
+  <link href="../css/ea.css" rel="stylesheet" type="text/css" />
+  <script>
+    function highlightNode(targetHref) {
+      const links = document.querySelectorAll('a');
+      for (const link of links) {
+        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
+        const target = targetHref.replace(/.*\//, '');
+        if (linkHref === target) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          link.style.backgroundColor = '#ffd'; // highlight color
+          break;
+        }
+      }
+    }
+  </script>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="PageBody">
+<body onload="tocInit()">
+  <div class="PageBody">
 	
 <img src="EA6.png" usemap="#EA6" border="0" />
 
 <MAP NAME="EA6">
-<area shape="rect" coords="30,43,207,66" href="EA3.html" target="_self">
-<area shape="rect" coords="277,478,465,536" href="./EA1/EA478.html" target="_self">
-<area shape="rect" coords="280,587,468,645" href="./EA1/EA479.html" target="_self">
-<area shape="rect" coords="277,332,465,390" href="./EA1/EA476.html" target="_self">
-<area shape="rect" coords="49,478,237,536" href="./EA1/EA473.html" target="_self">
-<area shape="rect" coords="49,696,237,754" href="./EA1/EA475.html" target="_self">
-<area shape="rect" coords="277,405,465,463" href="./EA1/EA477.html" target="_self">
-<area shape="rect" coords="281,696,469,754" href="./EA1/EA480.html" target="_self">
-<area shape="rect" coords="49,551,237,681" href="./EA1/EA474.html" target="_self">
-<area shape="rect" coords="49,332,237,390" href="./EA1/EA471.html" target="_self">
-<area shape="rect" coords="49,405,237,463" href="./EA1/EA472.html" target="_self">
-<area shape="rect" coords="121,64,390,283" href="./EA1/EA659.html" target="_self">
-<area shape="rect" coords="270,311,474,543" href="EA94.html" target="_self">
-<area shape="rect" coords="38,311,245,688" href="EA95.html" target="_self">
-<area shape="rect" coords="10,10,542,834" href="EA1.html" target="_self">
+<area shape="rect" coords="12,10,144,33" href="EA3.html" target="_self">
+<area shape="rect" coords="10,34,571,65" href="EA30.html" target="_self">
 </MAP>
 
-	<div class="ObjectTitle">A.01 Overhead Line Equipment (OLE) : SysML Block Definition diagram</div>
+	<div class="ObjectTitle">Capability Mapping : Package diagram</div>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">05/02/2025 13:19:03</td>
+			<td width="85%" class="ObjectDetailsValue">12/04/2025 16:09:04</td>
 		</tr>
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
-			<td width="85%" class="ObjectDetailsValue">15/04/2025 00:07:46</td>
+			<td width="85%" class="ObjectDetailsValue">14/04/2025 11:43:06</td>
 		</tr>
 		<tr style="padding-top: 10px;">
 			<td width="15%" class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
@@ -81,11 +57,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
-			<td width="85%" class="ObjectDetailsValue">{618F50F0-4756-435e-8C2C-4E9BC81406BE}</td>
+			<td width="85%" class="ObjectDetailsValue">{4210C6FA-0CA4-4b98-A036-40348B495FDB}</td>
 		</tr>
 	</table>
 	
 </div>
- 
+
 </body>
 </html>

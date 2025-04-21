@@ -1,101 +1,108 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>A.06 Provisioning - Yard</title>
-<link href="../css/ea.css" rel="stylesheet" type="text/css" />
-<script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
-}
-
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title></title>
+  <link href="../css/ea.css" rel="stylesheet" type="text/css" />
+  <script>
+    function highlightNode(targetHref) {
+      const links = document.querySelectorAll('a');
+      for (const link of links) {
+        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
+        const target = targetHref.replace(/.*\//, '');
+        if (linkHref === target) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          link.style.backgroundColor = '#ffd'; // highlight color
+          break;
+        }
+      }
+    }
+  </script>
 </head>
-<body onload="initPage(this);" class="Content">
+<body onload="tocInit()">
+  <div class="pageHeader"></div>
 <div class="PageBody">
-	
-<img src="EA16.png" usemap="#EA16" border="0" />
-
-<MAP NAME="EA16">
-<area shape="rect" coords="30,43,276,66" href="EA3.html" target="_self">
-<area shape="rect" coords="65,929,219,974" href="./EA1/EA424.html" target="_self">
-<area shape="rect" coords="65,983,219,1028" href="./EA1/EA425.html" target="_self">
-<area shape="rect" coords="269,917,423,962" href="./EA1/EA432.html" target="_self">
-<area shape="rect" coords="269,604,423,649" href="./EA1/EA428.html" target="_self">
-<area shape="rect" coords="269,484,423,529" href="./EA1/EA427.html" target="_self">
-<area shape="rect" coords="269,424,423,469" href="./EA1/EA426.html" target="_self">
-<area shape="rect" coords="63,544,217,589" href="./EA1/EA418.html" target="_self">
-<area shape="rect" coords="63,484,217,529" href="./EA1/EA417.html" target="_self">
-<area shape="rect" coords="63,424,217,469" href="./EA1/EA416.html" target="_self">
-<area shape="rect" coords="269,736,423,781" href="./EA1/EA429.html" target="_self">
-<area shape="rect" coords="269,797,423,842" href="./EA1/EA430.html" target="_self">
-<area shape="rect" coords="65,875,219,920" href="./EA1/EA423.html" target="_self">
-<area shape="rect" coords="63,736,217,781" href="./EA1/EA421.html" target="_self">
-<area shape="rect" coords="269,855,423,900" href="./EA1/EA431.html" target="_self">
-<area shape="rect" coords="63,624,217,669" href="./EA1/EA419.html" target="_self">
-<area shape="rect" coords="65,821,219,866" href="./EA1/EA422.html" target="_self">
-<area shape="rect" coords="63,680,217,725" href="./EA1/EA420.html" target="_self">
-<area shape="rect" coords="93,68,389,352" href="./EA1/EA664.html" target="_self">
-<area shape="rect" coords="257,399,436,675" href="EA85.html" target="_self">
-<area shape="rect" coords="257,712,436,970" href="EA104.html" target="_self">
-<area shape="rect" coords="54,803,230,1036" href="EA115.html" target="_self">
-<area shape="rect" coords="54,604,230,787" href="EA82.html" target="_self">
-<area shape="rect" coords="54,399,230,594" href="EA67.html" target="_self">
-<area shape="rect" coords="10,10,516,1108" href="EA1.html" target="_self">
-</MAP>
-
-	<div class="ObjectTitle">A.06 Provisioning - Yard : SysML Block Definition diagram</div>
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script> GL8 : Public  &lt;&lt;NavigationCell&gt;&gt; Hyperlink</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">06/02/2025 15:51:20</td>
+			<td width="85%" class="ObjectDetailsValue">12/04/2025 16:10:40</td>
 		</tr>
 		<tr>
-			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
-			<td width="85%" class="ObjectDetailsValue">15/04/2025 00:07:24</td>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">12/04/2025 16:10:40</td>
 		</tr>
-		<tr style="padding-top: 10px;">
-			<td width="15%" class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
-			<td width="85%" class="ObjectDetailsValue"></td>			
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj00" style="display: none;">
-			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td width="85%" class="ObjectDetailsValue">Admin</td>
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Admin</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
-			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td width="85%" class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr>
-			<td width="15%" class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
-			<td width="85%" class="ObjectDetailsValue"></td>			
+			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="adv00" style="display: none;">
-			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
-			<td width="85%" class="ObjectDetailsValue">{2EF24D17-41E7-4dda-8E6F-2E6305B247F7}</td>
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{41095579-0151-47e7-9639-193FEF405221}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA5.html">Capability Mapping</a></td>
 		</tr>
 	</table>
 	
-</div>
- 
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+		</ul>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">DiagLinkType:</td>
+				<td width="70%" class="TableRow">Structural</td>
+			</tr>
+
+
+			</table>
+		</div>	</div>
+<div class="pageFooter"></div>
+
 </body>
 </html>
