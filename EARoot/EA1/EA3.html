@@ -1,37 +1,48 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>ArchiMate 3.1 Project</title>
-  <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
-  <script>
-    function highlightNode(targetHref) {
-      const links = document.querySelectorAll('a');
-      for (const link of links) {
-        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
-        const target = targetHref.replace(/.*\//, '');
-        if (linkHref === target) {
-          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          link.style.backgroundColor = '#ffd'; // highlight color
-          break;
-        }
-      }
-    }
-  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ArchiMate 3.1 Project</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
 </head>
-<body onload="tocInit()">
-  <div class="PageBody">
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
 	
 <img src="EA4.png" usemap="#EA4" border="0" />
 
 <MAP NAME="EA4">
 <area shape="rect" coords="12,10,77,33" href="EA1.html" target="_self">
-<area shape="rect" coords="10,34,571,65" href="EA24.html" target="_self">
-<area shape="rect" coords="405,77,575,192" href="../EA3/EA5/EA308.html" target="_self">
-<area shape="rect" coords="210,218,380,333" href="../EA3/EA4/EA289.html" target="_self">
-<area shape="rect" coords="15,218,185,333" href="../EA3/EA3/EA189.html" target="_self">
+<area shape="rect" coords="10,34,571,65" href="EA17.html" target="_self">
+<area shape="rect" coords="405,77,575,192" href="../EA3/EA5/EA309.html" target="_self">
+<area shape="rect" coords="210,218,380,333" href="../EA3/EA4/EA290.html" target="_self">
+<area shape="rect" coords="15,218,185,333" href="../EA3/EA3/EA190.html" target="_self">
 <area shape="rect" coords="210,77,380,192" href="EA5.html" target="_self">
-<area shape="rect" coords="15,77,185,192" href="../EA3/EA1/EA114.html" target="_self">
+<area shape="rect" coords="15,77,185,192" href="../EA3/EA1/EA115.html" target="_self">
 </MAP>
 
 	<div class="ObjectTitle">ArchiMate 3.1 Project : Package diagram</div>
@@ -67,6 +78,6 @@
 	</table>
 	
 </div>
-
+ 
 </body>
 </html>

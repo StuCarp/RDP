@@ -1,33 +1,44 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>BRS Elements::RDP-BRS-091 The Rail Decarbonisation System power electronics equipment shall have a Design Life of 25 years.</title>
-  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-  <script>
-    function highlightNode(targetHref) {
-      const links = document.querySelectorAll('a');
-      for (const link of links) {
-        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
-        const target = targetHref.replace(/.*\//, '');
-        if (linkHref === target) {
-          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          link.style.backgroundColor = '#ffd'; // highlight color
-          break;
-        }
-      }
-    }
-  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>BRS Elements::RDP-BRS-090 The Rail Decarbonisation System control/comms equipment shall have a Design Life of 15 years.</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
 </head>
-<body onload="tocInit()">
-  <div class="pageHeader"></div>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RDP-BRS-091 The Rail Decarbonisation System power electronics equipment shall have a Design Life of 25 years.", " : "))</script>  : Public  &lt;&lt;ArchiMate_Requirement&gt;&gt; Requirement</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RDP-BRS-090 The Rail Decarbonisation System control/comms equipment shall have a Design Life of 15 years.", " : "))</script>  : Public  &lt;&lt;ArchiMate_Requirement&gt;&gt; Requirement</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">09/04/2025 13:59:35</td>
+			<td width="85%" class="ObjectDetailsValue">09/04/2025 13:52:52</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -76,11 +87,11 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{6A3E499F-8386-4e64-8845-3A9456A8B74A}</td>
+			<td class="ObjectDetailsValue">{F24B7420-7E0A-4867-805B-ACA611D02A70}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA2/EA142.html">GL6</a>, <a href="../EA189.html">Business Requirements Specification (BRS)</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA2/EA143.html">GL6</a>, <a href="../EA190.html">Business Requirements Specification (BRS)</a></td>
 		</tr>
 	</table>
 	
@@ -98,7 +109,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA1/EA163.html">«ArchiMate_Capability» CAP5 Asset Lifecycle Sustainability</a><br />
+						<a href="../../EA2/EA1/EA164.html">«ArchiMate_Capability» CAP5 Asset Lifecycle Sustainability</a><br />
 						Capability «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -112,8 +123,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink393" onclick="parent.toggleDiv('detailsDIVLink393','DetailsImageLink393')" />Details:
-							<div id="detailsDIVLink393" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink392" onclick="parent.toggleDiv('detailsDIVLink392','DetailsImageLink392')" />Details:
+							<div id="detailsDIVLink392" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -147,6 +158,6 @@
 			</table>
 		</div>	</div>
 <div class="pageFooter"></div>
-
+ 
 </body>
 </html>

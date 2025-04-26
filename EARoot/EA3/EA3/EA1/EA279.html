@@ -1,29 +1,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>BRS Elements::RDP-BRS-074 The Rail Decarbonisation System shall provide Signalling Immunisation of the railway signalling system allowing for compatibility with new BEL and OLE systems.</title>
-  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-  <script>
-    function highlightNode(targetHref) {
-      const links = document.querySelectorAll('a');
-      for (const link of links) {
-        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
-        const target = targetHref.replace(/.*\//, '');
-        if (linkHref === target) {
-          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          link.style.backgroundColor = '#ffd'; // highlight color
-          break;
-        }
-      }
-    }
-  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>BRS Elements::RDP-BRS-073 The Rail Decarbonisation System shall evaluate the compatibility and susceptibility of Electro-Magnetic Interference (EMI).</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
 </head>
-<body onload="tocInit()">
-  <div class="pageHeader"></div>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RDP-BRS-074 The Rail Decarbonisation System shall provide Signalling Immunisation of the railway signalling system allowing for compatibility with new BEL and OLE systems.", " : "))</script>  : Public  &lt;&lt;ArchiMate_Requirement&gt;&gt; Requirement</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RDP-BRS-073 The Rail Decarbonisation System shall evaluate the compatibility and susceptibility of Electro-Magnetic Interference (EMI).", " : "))</script>  : Public  &lt;&lt;ArchiMate_Requirement&gt;&gt; Requirement</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -76,11 +87,11 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{93F478C4-BE86-4bf8-8739-7BD5310375DA}</td>
+			<td class="ObjectDetailsValue">{B2BCFE6B-10ED-40db-9034-517B71EAEB68}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA2/EA140.html">GL5</a>, <a href="../EA189.html">Business Requirements Specification (BRS)</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA2/EA141.html">GL5</a>, <a href="../EA190.html">Business Requirements Specification (BRS)</a></td>
 		</tr>
 	</table>
 	
@@ -98,7 +109,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA1/EA180.html">«ArchiMate_Capability» CAP31 System Electromagnetic Compatibility & Immunity</a><br />
+						<a href="../../EA2/EA1/EA181.html">«ArchiMate_Capability» CAP31 System Electromagnetic Compatibility & Immunity</a><br />
 						Capability «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -112,8 +123,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink439" onclick="parent.toggleDiv('detailsDIVLink439','DetailsImageLink439')" />Details:
-							<div id="detailsDIVLink439" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink438" onclick="parent.toggleDiv('detailsDIVLink438','DetailsImageLink438')" />Details:
+							<div id="detailsDIVLink438" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -147,6 +158,6 @@
 			</table>
 		</div>	</div>
 <div class="pageFooter"></div>
-
+ 
 </body>
 </html>

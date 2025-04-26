@@ -1,37 +1,48 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Capability Elements::CAP22 Maintenance & Infrastructure Readiness</title>
-  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-  <script>
-    function highlightNode(targetHref) {
-      const links = document.querySelectorAll('a');
-      for (const link of links) {
-        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
-        const target = targetHref.replace(/.*\//, '');
-        if (linkHref === target) {
-          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          link.style.backgroundColor = '#ffd'; // highlight color
-          break;
-        }
-      }
-    }
-  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Capability Elements::CAP20 Integrated System Architecture Design</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
 </head>
-<body onload="tocInit()">
-  <div class="pageHeader"></div>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CAP22 Maintenance & Infrastructure Readiness", " : "))</script>  : Public  &lt;&lt;ArchiMate_Capability&gt;&gt; Capability</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CAP20 Integrated System Architecture Design", " : "))</script>  : Public  &lt;&lt;ArchiMate_Capability&gt;&gt; Capability</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">24/02/2025 11:09:56</td>
+			<td width="85%" class="ObjectDetailsValue">14/02/2025 12:19:43</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">24/02/2025 11:09:59</td>
+			<td class="ObjectDetailsValue">24/02/2025 11:01:03</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -44,11 +55,11 @@
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsValue">1</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
-			<td class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsValue">1</td>
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
@@ -76,11 +87,11 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{69687EF0-FB7B-48ec-835B-42062F085A42}</td>
+			<td class="ObjectDetailsValue">{80F0966F-00E3-4cd4-9AC4-CF7E233F9E86}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA142.html">GL6</a>, <a href="EA156.html">Capabilities</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA141.html">GL5</a>, <a href="EA157.html">Capabilities</a></td>
 		</tr>
 	</table>
 	
@@ -99,7 +110,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA215.html">«ArchiMate_Requirement» RDP-BRS-040 The Rail Decarbonisation System shall provide safe access to the Track for maintenance</a><br />
+						<a href="../../EA3/EA1/EA209.html">«ArchiMate_Requirement» RDP-BRS-024 The Rail Decarbonisation System shall ensure Traction Power provision supports BEL power demand characteristics</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -113,8 +124,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink141" onclick="parent.toggleDiv('detailsDIVLink141','DetailsImageLink141')" />Details:
-							<div id="detailsDIVLink141" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink121" onclick="parent.toggleDiv('detailsDIVLink121','DetailsImageLink121')" />Details:
+							<div id="detailsDIVLink121" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -122,7 +133,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA216.html">«ArchiMate_Requirement» RDP-BRS-041 The Rail Decarbonisation System shall provide safe access to the Trackside Equipment for maintenance</a><br />
+						<a href="../../EA3/EA1/EA214.html">«ArchiMate_Requirement» RDP-BRS-038 The Rail Decarbonisation System Rollingstock Maintenance facilities shall be sized to provide required maintenance capability during both the Hybrid Operation and BEL End State</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -136,8 +147,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink142" onclick="parent.toggleDiv('detailsDIVLink142','DetailsImageLink142')" />Details:
-							<div id="detailsDIVLink142" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink122" onclick="parent.toggleDiv('detailsDIVLink122','DetailsImageLink122')" />Details:
+							<div id="detailsDIVLink122" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -145,7 +156,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA225.html">«ArchiMate_Requirement» RDP-BRS-050 The Rail Decarbonisation System shall ensure sufficient numbers of trainined competent Nominated Staff are available to operate and maintain the Rail Decarbonisation System through the Hybrid Operation.</a><br />
+						<a href="../../EA3/EA1/EA198.html">«ArchiMate_Requirement» RDP-BRS-003 The Rail Decarbonisation System shall enable Current System service levels of 24 hours per day, 7 days per week, 365 days per year.</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -159,8 +170,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink143" onclick="parent.toggleDiv('detailsDIVLink143','DetailsImageLink143')" />Details:
-							<div id="detailsDIVLink143" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink123" onclick="parent.toggleDiv('detailsDIVLink123','DetailsImageLink123')" />Details:
+							<div id="detailsDIVLink123" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -168,7 +179,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA203.html">«ArchiMate_Requirement» RDP-BRS-016 The Rail Decarbonisation System shall provide Rollingstock Maintenance facilities that are configurable to accommodate Hybrid Operations</a><br />
+						<a href="../../EA3/EA1/EA199.html">«ArchiMate_Requirement» RDP-BRS-005 The Rail Decarbonisation System shall support Sprint Running at the level provided by the Current System</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -182,8 +193,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink144" onclick="parent.toggleDiv('detailsDIVLink144','DetailsImageLink144')" />Details:
-							<div id="detailsDIVLink144" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink124" onclick="parent.toggleDiv('detailsDIVLink124','DetailsImageLink124')" />Details:
+							<div id="detailsDIVLink124" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -191,7 +202,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA204.html">«ArchiMate_Requirement» RDP-BRS-017 The Rail Decarbonisation System shall provide Train Arrestors suitable for the Battery Electric Locomotives</a><br />
+						<a href="../../EA3/EA1/EA205.html">«ArchiMate_Requirement» RDP-BRS-017 The Rail Decarbonisation System shall provide Train Arrestors suitable for the Battery Electric Locomotives</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -205,8 +216,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink145" onclick="parent.toggleDiv('detailsDIVLink145','DetailsImageLink145')" />Details:
-							<div id="detailsDIVLink145" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink125" onclick="parent.toggleDiv('detailsDIVLink125','DetailsImageLink125')" />Details:
+							<div id="detailsDIVLink125" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -214,7 +225,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA229.html">«ArchiMate_Requirement» RDP-BRS-054 The Rail Decarbonisation System shall provide the capability for Nominated Staff and required equipment to access required areas to perform Operation activities</a><br />
+						<a href="../../EA3/EA1/EA237.html">«ArchiMate_Requirement» RDP-BRS-068 The Rail Decarbonisation System shall not increase the frequency of out of service locomotives per equivalent annual tonnage</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -228,8 +239,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink146" onclick="parent.toggleDiv('detailsDIVLink146','DetailsImageLink146')" />Details:
-							<div id="detailsDIVLink146" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink126" onclick="parent.toggleDiv('detailsDIVLink126','DetailsImageLink126')" />Details:
+							<div id="detailsDIVLink126" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -237,7 +248,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA228.html">«ArchiMate_Requirement» RDP-BRS-053 The Rail Decarbonisation System shall enable Nominated Staff to perform Operation activities competently</a><br />
+						<a href="../../EA3/EA1/EA257.html">«ArchiMate_Requirement» RDP-BRS-014 The Rail Decarbonisation System shall provide Rolling Stock Maintenance Facilities that accommodate BEL vehicles</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -251,8 +262,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink147" onclick="parent.toggleDiv('detailsDIVLink147','DetailsImageLink147')" />Details:
-							<div id="detailsDIVLink147" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink127" onclick="parent.toggleDiv('detailsDIVLink127','DetailsImageLink127')" />Details:
+							<div id="detailsDIVLink127" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -260,7 +271,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA213.html">«ArchiMate_Requirement» RDP-BRS-038 The Rail Decarbonisation System Rollingstock Maintenance facilities shall be sized to provide required maintenance capability during both the Hybrid Operation and BEL End State</a><br />
+						<a href="../../EA3/EA1/EA212.html">«ArchiMate_Requirement» RDP-BRS-036 The Rail Decarbonisation System shall provide Rollingstock Maintenance Facilities that maintain BEL vehicles</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -274,8 +285,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink148" onclick="parent.toggleDiv('detailsDIVLink148','DetailsImageLink148')" />Details:
-							<div id="detailsDIVLink148" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink128" onclick="parent.toggleDiv('detailsDIVLink128','DetailsImageLink128')" />Details:
+							<div id="detailsDIVLink128" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -283,7 +294,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA211.html">«ArchiMate_Requirement» RDP-BRS-036 The Rail Decarbonisation System shall provide Rollingstock Maintenance Facilities that maintain BEL vehicles</a><br />
+						<a href="../../EA3/EA1/EA213.html">«ArchiMate_Requirement» RDP-BRS-037 The Rail Decarbonisation System shall enable the perparation of newly arrived BEL in designated stabling locations</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -297,8 +308,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink149" onclick="parent.toggleDiv('detailsDIVLink149','DetailsImageLink149')" />Details:
-							<div id="detailsDIVLink149" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink129" onclick="parent.toggleDiv('detailsDIVLink129','DetailsImageLink129')" />Details:
+							<div id="detailsDIVLink129" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -306,7 +317,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA212.html">«ArchiMate_Requirement» RDP-BRS-037 The Rail Decarbonisation System shall enable the perparation of newly arrived BEL in designated stabling locations</a><br />
+						<a href="../../EA3/EA1/EA201.html">«ArchiMate_Requirement» RDP-BRS-010 Track shall support the increased weight and performance profile of Battery Electric Locomotives in Normal, Abnormal, Degraded and Emergency Mode operation.</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -320,8 +331,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink150" onclick="parent.toggleDiv('detailsDIVLink150','DetailsImageLink150')" />Details:
-							<div id="detailsDIVLink150" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink130" onclick="parent.toggleDiv('detailsDIVLink130','DetailsImageLink130')" />Details:
+							<div id="detailsDIVLink130" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -329,7 +340,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA227.html">«ArchiMate_Requirement» RDP-BRS-052 The Rail Decarbonisation System shall enable Nominated Staff to perform Maintenance activities competently</a><br />
+						<a href="../../EA3/EA1/EA200.html">«ArchiMate_Requirement» RDP-BRS-009 The Battery Electric Locomotives shall possess a Kinematic Envelope that ensures entering and traversing through rail infrastructure is free of hindrance with any structure, equipment or fitting.</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -343,8 +354,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink151" onclick="parent.toggleDiv('detailsDIVLink151','DetailsImageLink151')" />Details:
-							<div id="detailsDIVLink151" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink131" onclick="parent.toggleDiv('detailsDIVLink131','DetailsImageLink131')" />Details:
+							<div id="detailsDIVLink131" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -352,7 +363,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA202.html">«ArchiMate_Requirement» RDP-BRS-015 The Rail Decarbonisation System shall accommodate peak stabling demands during the transfer from Diesel Locomotives to BEL vehicles.</a><br />
+						<a href="../../EA3/EA1/EA231.html">«ArchiMate_Requirement» RDP-BRS-062 The Rail Decarbonisation System shall maintain or improve Current System Level Crossing Safety Risks</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -366,8 +377,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink152" onclick="parent.toggleDiv('detailsDIVLink152','DetailsImageLink152')" />Details:
-							<div id="detailsDIVLink152" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink132" onclick="parent.toggleDiv('detailsDIVLink132','DetailsImageLink132')" />Details:
+							<div id="detailsDIVLink132" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -375,7 +386,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA200.html">«ArchiMate_Requirement» RDP-BRS-010 Track shall support the increased weight and performance profile of Battery Electric Locomotives in Normal, Abnormal, Degraded and Emergency Mode operation.</a><br />
+						<a href="../../EA3/EA1/EA218.html">«ArchiMate_Requirement» RDP-BRS-042 The Rail Decarbonisation System shall ensure suitable levels of operator accommodation is available to operate Diesel Locomotives and BELs during the Hybrid Operation phase</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -389,8 +400,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink153" onclick="parent.toggleDiv('detailsDIVLink153','DetailsImageLink153')" />Details:
-							<div id="detailsDIVLink153" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink133" onclick="parent.toggleDiv('detailsDIVLink133','DetailsImageLink133')" />Details:
+							<div id="detailsDIVLink133" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -398,7 +409,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA268.html">«ArchiMate_Requirement» RDP-BRS-035 The Rail Decarbonisation System shall enable the storage and management of spares for the proposed system.</a><br />
+						<a href="../../EA3/EA1/EA210.html">«ArchiMate_Requirement» RDP-BRS-025 The Rail Decarbonisation System shall ensure Overhead Line Equipment provision supports BEL power demand characteristics</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -412,8 +423,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink154" onclick="parent.toggleDiv('detailsDIVLink154','DetailsImageLink154')" />Details:
-							<div id="detailsDIVLink154" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink134" onclick="parent.toggleDiv('detailsDIVLink134','DetailsImageLink134')" />Details:
+							<div id="detailsDIVLink134" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -421,7 +432,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA226.html">«ArchiMate_Requirement» RDP-BRS-051 The Rail Decarbonisation System shall enable Nominated Staff to perform competently during Normal, Abnormal, Degraded and Emergency operating conditions</a><br />
+						<a href="../../EA3/EA1/EA234.html">«ArchiMate_Requirement» RDP-BRS-065 The Rail Decarbonisation System shall provide a high level of Availability to ensure 192 Mtpa annual tonnage is achieved, with the specific percentage target to be determined during the System Definition phase based on operational needs and...</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -435,8 +446,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink155" onclick="parent.toggleDiv('detailsDIVLink155','DetailsImageLink155')" />Details:
-							<div id="detailsDIVLink155" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink135" onclick="parent.toggleDiv('detailsDIVLink135','DetailsImageLink135')" />Details:
+							<div id="detailsDIVLink135" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -444,7 +455,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA267.html">«ArchiMate_Requirement» RDP-BRS-034 The Rail Decarbonisation System shall provide the capability for Nominated Staff and required equipment to access required areas to perform Maintenance activities</a><br />
+						<a href="../../EA3/EA1/EA206.html">«ArchiMate_Requirement» RDP-BRS-018 The Rail Decarbonisation System shall accommodate projected future freight fleet increase.</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -458,8 +469,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink156" onclick="parent.toggleDiv('detailsDIVLink156','DetailsImageLink156')" />Details:
-							<div id="detailsDIVLink156" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink136" onclick="parent.toggleDiv('detailsDIVLink136','DetailsImageLink136')" />Details:
+							<div id="detailsDIVLink136" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -467,7 +478,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA223.html">«ArchiMate_Requirement» RDP-BRS-048 The Rail Decarbonisation System shall ensure Nominated Staff required to operate the system are trainined to the appropriate skill levels</a><br />
+						<a href="../../EA3/EA1/EA236.html">«ArchiMate_Requirement» RDP-BRS-067 The Rail Decarbonisation System shall maintain or improve Current System recovery time from Incidents</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -481,8 +492,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink157" onclick="parent.toggleDiv('detailsDIVLink157','DetailsImageLink157')" />Details:
-							<div id="detailsDIVLink157" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink137" onclick="parent.toggleDiv('detailsDIVLink137','DetailsImageLink137')" />Details:
+							<div id="detailsDIVLink137" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -490,7 +501,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA205.html">«ArchiMate_Requirement» RDP-BRS-018 The Rail Decarbonisation System shall accommodate projected future freight fleet increase.</a><br />
+						<a href="../../EA3/EA1/EA207.html">«ArchiMate_Requirement» RDP-BRS-022 The Rail Decarbonisation System shall ensure BEL vehicles interface with existing Ore Cars</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -504,8 +515,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink158" onclick="parent.toggleDiv('detailsDIVLink158','DetailsImageLink158')" />Details:
-							<div id="detailsDIVLink158" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink138" onclick="parent.toggleDiv('detailsDIVLink138','DetailsImageLink138')" />Details:
+							<div id="detailsDIVLink138" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -513,7 +524,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA230.html">«ArchiMate_Requirement» RDP-BRS-062 The Rail Decarbonisation System shall maintain or improve Current System Level Crossing Safety Risks</a><br />
+						<a href="../../EA3/EA1/EA208.html">«ArchiMate_Requirement» RDP-BRS-023 The Rail Decarbonisation System shall ensure BEL vehicles interface with the existing DEL vehicles</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -527,8 +538,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink159" onclick="parent.toggleDiv('detailsDIVLink159','DetailsImageLink159')" />Details:
-							<div id="detailsDIVLink159" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink139" onclick="parent.toggleDiv('detailsDIVLink139','DetailsImageLink139')" />Details:
+							<div id="detailsDIVLink139" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -536,7 +547,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA266.html">«ArchiMate_Requirement» RDP-BRS-033 The Rail Decarbonisation System shall provide spares, tools and consumables for all introduced systems and infrastructure</a><br />
+						<a href="../../EA3/EA1/EA238.html">«ArchiMate_Requirement» RDP-BRS-071 The Rail Decarbonisation System enabling technology shall be supportable over the lifetime of the system</a><br />
 						Requirement «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -550,8 +561,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink160" onclick="parent.toggleDiv('detailsDIVLink160','DetailsImageLink160')" />Details:
-							<div id="detailsDIVLink160" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink140" onclick="parent.toggleDiv('detailsDIVLink140','DetailsImageLink140')" />Details:
+							<div id="detailsDIVLink140" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -593,7 +604,7 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA128.html">«ArchiMate_Goal» GL6 Enhance the reliability and availability of the rail network and fleet through optimised maintenance, reduced downtime, and improved system resilience to ensure consistent performance.</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA128.html">«ArchiMate_Goal» GL5 Develop a fully integrated system that meets operational outcomes in collaboration with user requirements (to be refined as part of the basis of design process).</a></td>
 					<td width="10%" class="TableRow" valign="top">Goal</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
@@ -604,6 +615,6 @@
 		</div>
 	</div>
 <div class="pageFooter"></div>
-
+ 
 </body>
 </html>

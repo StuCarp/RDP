@@ -1,29 +1,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Business Goal Elements::GL4 Explore opportunities to commercialise the decarbonised rail solution, aiming to bring on Customer Number Two.</title>
-  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-  <script>
-    function highlightNode(targetHref) {
-      const links = document.querySelectorAll('a');
-      for (const link of links) {
-        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
-        const target = targetHref.replace(/.*\//, '');
-        if (linkHref === target) {
-          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          link.style.backgroundColor = '#ffd'; // highlight color
-          break;
-        }
-      }
-    }
-  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Business Goal Elements::GL3 Reduce high-potential events related to conflicting train movements and propelling operations while enhancing broader safety measures to meet world-class standards.</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
 </head>
-<body onload="tocInit()">
-  <div class="pageHeader"></div>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GL4 Explore opportunities to commercialise the decarbonised rail solution, aiming to bring on Customer Number Two.", " : "))</script>  : Public  &lt;&lt;ArchiMate_Goal&gt;&gt; Goal</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GL3 Reduce high-potential events related to conflicting train movements and propelling operations while enhancing broader safety measures to meet world-class standards.", " : "))</script>  : Public  &lt;&lt;ArchiMate_Goal&gt;&gt; Goal</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -76,11 +87,11 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{9F905F3E-2201-4816-B79F-7AA93A114BE9}</td>
+			<td class="ObjectDetailsValue">{8FFF4B50-A683-4970-B4F8-11A20260AE47}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA114.html">Business Goals</a>, <a href="../../EA2/EA138.html">GL4</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA115.html">Business Goals</a>, <a href="../../EA2/EA137.html">GL3</a></td>
 		</tr>
 	</table>
 	
@@ -99,7 +110,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA120.html">«ArchiMate_Goal» GL0 Achieve Real Zero emissions by 2030.</a><br />
+						<a href="EA121.html">«ArchiMate_Goal» GL0 Achieve Real Zero emissions by 2030.</a><br />
 						Goal «ArchiMate_Aggregation» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -113,8 +124,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink34" onclick="parent.toggleDiv('detailsDIVLink34','DetailsImageLink34')" />Details:
-							<div id="detailsDIVLink34" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink33" onclick="parent.toggleDiv('detailsDIVLink33','DetailsImageLink33')" />Details:
+							<div id="detailsDIVLink33" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -156,7 +167,28 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA166.html">«ArchiMate_Capability» CAP10 Decarbonisation Solution Commercialisation</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA161.html">«ArchiMate_Capability» CAP2 Operational Risk Assessment</a></td>
+					<td width="10%" class="TableRow" valign="top">Capability</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA184.html">«ArchiMate_Capability» CAP36 Safety & Security Risk Management</a></td>
+					<td width="10%" class="TableRow" valign="top">Capability</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA166.html">«ArchiMate_Capability» CAP9 Collision Avoidance & Train Control</a></td>
+					<td width="10%" class="TableRow" valign="top">Capability</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA180.html">«ArchiMate_Capability» CAP30 Rail Safety Engineering and Management Systems</a></td>
 					<td width="10%" class="TableRow" valign="top">Capability</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
@@ -167,6 +199,6 @@
 		</div>
 	</div>
 <div class="pageFooter"></div>
-
+ 
 </body>
 </html>

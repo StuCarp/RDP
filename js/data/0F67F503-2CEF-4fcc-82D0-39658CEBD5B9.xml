@@ -1,6 +1,2 @@
-tocTab[tocTab.length] = new Array("0.4:1", "", "MBSE Project (SysML)", "EARoot/EA4/EA411.html", "188.png", "247", "0", "", "Custom diagram0","{BA01DED4-B948-4d05-8E2A-DAEC15065C29}");
-tocTab[tocTab.length] = new Array("0.4:2", "", "Class1", "EARoot/EA4/EA414.html", "5.png", "E8397", "0", "", "Class0","{708E8E2C-0ADA-49fe-A1BB-EA9F34521072}");
-tocTab[tocTab.length] = new Array("0.4:3", "", "«Product» Product1", "EARoot/EA4/EA415.html", "2FDC5606-3_Product.png", "E8395", "0", "", "Artifact0","{6AAA497D-D6A5-426b-8509-2451E21EDDFE}");
-tocTab[tocTab.length] = new Array("0.4:4", "", "«Version» Version1", "EARoot/EA4/EA416.html", "2FDC5606-3_Version.png", "E8396", "0", "", "Artifact0","{E0BDFCB8-00E9-40f4-927E-4943C7D46D6B}");
-tocTab[tocTab.length] = new Array("0.4.1", "1", "System Breakdown Structure", "EARoot/EA4/EA1/EA451.html", "4.png", "", "", "{6E25C1CF-1A13-4e6e-9B23-D99356E73093}", "Package");
-tocTab[tocTab.length] = new Array("0.4.2", "1", "System Descriptions", "EARoot/EA4/EA2/EA1154.html", "4.png", "", "", "{D3D6AE7C-106B-4894-A0E2-99A4A84E9311}", "Package");
+tocTab[tocTab.length] = new Array("0.4.1", "1", "System Breakdown Structure", "EARoot/EA4/EA1/EA447.html", "4.png", "", "", "{6E25C1CF-1A13-4e6e-9B23-D99356E73093}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2", "1", "System Descriptions", "EARoot/EA4/EA2/EA1161.html", "4.png", "", "", "{D3D6AE7C-106B-4894-A0E2-99A4A84E9311}", "Package");

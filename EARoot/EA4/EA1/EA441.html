@@ -1,78 +1,57 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>A.10 Traction Power</title>
-  <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
-  <script>
-    function highlightNode(targetHref) {
-      const links = document.querySelectorAll('a');
-      for (const link of links) {
-        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
-        const target = targetHref.replace(/.*\//, '');
-        if (linkHref === target) {
-          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          link.style.backgroundColor = '#ffd'; // highlight color
-          break;
-        }
-      }
-    }
-  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>A.12 Mines</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
 </head>
-<body onload="tocInit()">
-  <div class="PageBody">
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
 	
 <img src="EA442.png" usemap="#EA442" border="0" />
 
 <MAP NAME="EA442">
-<area shape="rect" coords="30,43,203,66" href="EA421.html" target="_self">
-<area shape="rect" coords="418,946,673,982" href="./EA1/EA551.html" target="_self">
-<area shape="rect" coords="151,946,406,982" href="./EA1/EA547.html" target="_self">
-<area shape="rect" coords="418,898,673,934" href="./EA1/EA550.html" target="_self">
-<area shape="rect" coords="151,898,406,934" href="./EA1/EA546.html" target="_self">
-<area shape="rect" coords="418,850,673,886" href="./EA1/EA549.html" target="_self">
-<area shape="rect" coords="151,850,406,886" href="./EA1/EA545.html" target="_self">
-<area shape="rect" coords="405,426,660,462" href="./EA1/EA655.html" target="_self">
-<area shape="rect" coords="138,426,393,462" href="./EA1/EA649.html" target="_self">
-<area shape="rect" coords="138,380,393,416" href="./EA1/EA648.html" target="_self">
-<area shape="rect" coords="405,564,660,600" href="./EA1/EA658.html" target="_self">
-<area shape="rect" coords="138,564,393,600" href="./EA1/EA652.html" target="_self">
-<area shape="rect" coords="138,472,393,508" href="./EA1/EA650.html" target="_self">
-<area shape="rect" coords="405,472,660,508" href="./EA1/EA656.html" target="_self">
-<area shape="rect" coords="405,518,660,554" href="./EA1/EA657.html" target="_self">
-<area shape="rect" coords="146,1409,401,1445" href="./EA1/EA1102.html" target="_self">
-<area shape="rect" coords="413,1363,668,1399" href="./EA1/EA1106.html" target="_self">
-<area shape="rect" coords="146,1501,401,1537" href="./EA1/EA1104.html" target="_self">
-<area shape="rect" coords="146,1455,401,1491" href="./EA1/EA1103.html" target="_self">
-<area shape="rect" coords="413,1455,668,1491" href="./EA1/EA1108.html" target="_self">
-<area shape="rect" coords="413,1409,668,1445" href="./EA1/EA1107.html" target="_self">
-<area shape="rect" coords="151,994,406,1030" href="./EA1/EA548.html" target="_self">
-<area shape="rect" coords="146,1363,401,1399" href="./EA1/EA1101.html" target="_self">
-<area shape="rect" coords="418,994,673,1030" href="./EA1/EA552.html" target="_self">
-<area shape="rect" coords="138,334,393,370" href="./EA1/EA647.html" target="_self">
-<area shape="rect" coords="405,380,660,416" href="./EA1/EA654.html" target="_self">
-<area shape="rect" coords="413,1317,668,1353" href="./EA1/EA1105.html" target="_self">
-<area shape="rect" coords="405,334,660,370" href="./EA1/EA653.html" target="_self">
-<area shape="rect" coords="138,518,393,554" href="./EA1/EA651.html" target="_self">
-<area shape="rect" coords="146,1317,401,1353" href="./EA1/EA1100.html" target="_self">
-<area shape="rect" coords="269,1097,545,1288" href="./EA1/EA553.html" target="_self">
-<area shape="rect" coords="260,640,564,820" href="./EA1/EA659.html" target="_self">
-<area shape="rect" coords="413,1501,668,1537" href="./EA1/EA1109.html" target="_self">
-<area shape="rect" coords="239,60,557,288" href="./EA1/EA1085.html" target="_self">
-<area shape="rect" coords="130,1071,687,1560" href="EA507.html" target="_self">
-<area shape="rect" coords="130,612,687,1051" href="EA529.html" target="_self">
-<area shape="rect" coords="10,10,724,1597" href="EA419.html" target="_self">
+<area shape="rect" coords="30,43,218,66" href="EA417.html" target="_self">
+<area shape="rect" coords="241,204,373,249" href="./EA1/EA966.html" target="_self">
+<area shape="rect" coords="54,204,186,249" href="./EA1/EA965.html" target="_self">
+<area shape="rect" coords="106,63,322,151" href="./EA1/EA1100.html" target="_self">
+<area shape="rect" coords="10,10,497,329" href="EA415.html" target="_self">
 </MAP>
 
-	<div class="ObjectTitle">A.10 Traction Power : SysML Block Definition diagram</div>
+	<div class="ObjectTitle">A.12 Mines : SysML Block Definition diagram</div>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">06/02/2025 16:13:37</td>
+			<td width="85%" class="ObjectDetailsValue">12/04/2025 14:50:14</td>
 		</tr>
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
-			<td width="85%" class="ObjectDetailsValue">15/04/2025 00:07:31</td>
+			<td width="85%" class="ObjectDetailsValue">15/04/2025 00:07:49</td>
 		</tr>
 		<tr style="padding-top: 10px;">
 			<td width="15%" class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
@@ -92,11 +71,11 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
-			<td width="85%" class="ObjectDetailsValue">{D454A078-EE30-4ce1-AE08-EF2A59553C06}</td>
+			<td width="85%" class="ObjectDetailsValue">{68DD96F1-9B23-497c-A570-C3FE5CBB0338}</td>
 		</tr>
 	</table>
 	
 </div>
-
+ 
 </body>
 </html>

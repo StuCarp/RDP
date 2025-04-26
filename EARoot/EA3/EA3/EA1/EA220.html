@@ -1,29 +1,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>BRS Elements::RDP-BRS-045 The Rail Decarbonisation System shall assess and identify the changes needed to current Maintenance Procedures</title>
-  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-  <script>
-    function highlightNode(targetHref) {
-      const links = document.querySelectorAll('a');
-      for (const link of links) {
-        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
-        const target = targetHref.replace(/.*\//, '');
-        if (linkHref === target) {
-          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          link.style.backgroundColor = '#ffd'; // highlight color
-          break;
-        }
-      }
-    }
-  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>BRS Elements::RDP-BRS-044 The Rail Decarbonisation System shall assess and identify the changes needed to current operational rules and procedures for the Fortescue rail network and all other impacted interfacing systems</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
 </head>
-<body onload="tocInit()">
-  <div class="pageHeader"></div>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RDP-BRS-045 The Rail Decarbonisation System shall assess and identify the changes needed to current Maintenance Procedures", " : "))</script>  : Public  &lt;&lt;ArchiMate_Requirement&gt;&gt; Requirement</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RDP-BRS-044 The Rail Decarbonisation System shall assess and identify the changes needed to current operational rules and procedures for the Fortescue rail network and all other impacted interfacing systems", " : "))</script>  : Public  &lt;&lt;ArchiMate_Requirement&gt;&gt; Requirement</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -76,11 +87,11 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{15265E56-4C43-40e9-90A1-FD7D5C2ECDF7}</td>
+			<td class="ObjectDetailsValue">{F202033D-52CB-4943-8527-EC31D13CC123}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA2/EA134.html">GL2</a>, <a href="../../EA2/EA140.html">GL5</a>, <a href="../../EA2/EA142.html">GL6</a>, <a href="../../EA2/EA144.html">GL7</a>, <a href="../EA189.html">Business Requirements Specification (BRS)</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA2/EA135.html">GL2</a>, <a href="../../EA2/EA137.html">GL3</a>, <a href="../../EA2/EA141.html">GL5</a>, <a href="../../EA2/EA143.html">GL6</a>, <a href="../../EA2/EA145.html">GL7</a>, <a href="../EA190.html">Business Requirements Specification (BRS)</a></td>
 		</tr>
 	</table>
 	
@@ -98,7 +109,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA1/EA171.html">«ArchiMate_Capability» CAP18 Human Factors Engineering and Integration</a><br />
+						<a href="../../EA2/EA1/EA176.html">«ArchiMate_Capability» CAP24 Operability</a><br />
 						Capability «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -112,8 +123,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink321" onclick="parent.toggleDiv('detailsDIVLink321','DetailsImageLink321')" />Details:
-							<div id="detailsDIVLink321" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink317" onclick="parent.toggleDiv('detailsDIVLink317','DetailsImageLink317')" />Details:
+							<div id="detailsDIVLink317" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -121,7 +132,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA1/EA188.html">«ArchiMate_Capability» CAP6 Reliability, Availability and Maintainability (RAM)</a><br />
+						<a href="../../EA2/EA1/EA189.html">«ArchiMate_Capability» CAP6 Reliability, Availability and Maintainability (RAM)</a><br />
 						Capability «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -135,8 +146,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink322" onclick="parent.toggleDiv('detailsDIVLink322','DetailsImageLink322')" />Details:
-							<div id="detailsDIVLink322" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink318" onclick="parent.toggleDiv('detailsDIVLink318','DetailsImageLink318')" />Details:
+							<div id="detailsDIVLink318" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -144,7 +155,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA1/EA162.html">«ArchiMate_Capability» CAP4 Asset Lifecycle Management</a><br />
+						<a href="../../EA2/EA1/EA172.html">«ArchiMate_Capability» CAP18 Human Factors Engineering and Integration</a><br />
 						Capability «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -158,8 +169,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink323" onclick="parent.toggleDiv('detailsDIVLink323','DetailsImageLink323')" />Details:
-							<div id="detailsDIVLink323" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink319" onclick="parent.toggleDiv('detailsDIVLink319','DetailsImageLink319')" />Details:
+							<div id="detailsDIVLink319" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -167,7 +178,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA1/EA175.html">«ArchiMate_Capability» CAP24 Operability</a><br />
+						<a href="../../EA2/EA1/EA161.html">«ArchiMate_Capability» CAP2 Operational Risk Assessment</a><br />
 						Capability «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -181,8 +192,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink324" onclick="parent.toggleDiv('detailsDIVLink324','DetailsImageLink324')" />Details:
-							<div id="detailsDIVLink324" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink320" onclick="parent.toggleDiv('detailsDIVLink320','DetailsImageLink320')" />Details:
+							<div id="detailsDIVLink320" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -216,6 +227,6 @@
 			</table>
 		</div>	</div>
 <div class="pageFooter"></div>
-
+ 
 </body>
 </html>

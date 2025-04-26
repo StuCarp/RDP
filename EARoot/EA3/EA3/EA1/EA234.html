@@ -1,29 +1,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>BRS Elements::RDP-BRS-066 The Rail Decarbonisation System implementation and End State shall be configured to minimise need for service disrupting possessions</title>
-  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-  <script>
-    function highlightNode(targetHref) {
-      const links = document.querySelectorAll('a');
-      for (const link of links) {
-        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
-        const target = targetHref.replace(/.*\//, '');
-        if (linkHref === target) {
-          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          link.style.backgroundColor = '#ffd'; // highlight color
-          break;
-        }
-      }
-    }
-  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>BRS Elements::RDP-BRS-065 The Rail Decarbonisation System shall provide a high level of Availability to ensure 192 Mtpa annual tonnage is achieved, with the specific percentage target to be determined during the System Definition phase based on operational needs and...</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
 </head>
-<body onload="tocInit()">
-  <div class="pageHeader"></div>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RDP-BRS-066 The Rail Decarbonisation System implementation and End State shall be configured to minimise need for service disrupting possessions", " : "))</script>  : Public  &lt;&lt;ArchiMate_Requirement&gt;&gt; Requirement</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RDP-BRS-065 The Rail Decarbonisation System shall provide a high level of Availability to ensure 192 Mtpa annual tonnage is achieved, with the specific percentage target to be determined during the System Definition phase based on operational needs and...", " : "))</script>  : Public  &lt;&lt;ArchiMate_Requirement&gt;&gt; Requirement</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -76,14 +87,15 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{F81C3F91-DB2B-43e9-8D80-9E17880DDB50}</td>
+			<td class="ObjectDetailsValue">{6D6C6D3F-2233-4442-86A8-555B7870DB4E}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA2/EA140.html">GL5</a>, <a href="../../EA2/EA142.html">GL6</a>, <a href="../../EA2/EA144.html">GL7</a>, <a href="../EA189.html">Business Requirements Specification (BRS)</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA2/EA135.html">GL2</a>, <a href="../../EA2/EA141.html">GL5</a>, <a href="../../EA2/EA143.html">GL6</a>, <a href="../../EA2/EA145.html">GL7</a>, <a href="../EA190.html">Business Requirements Specification (BRS)</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">The Rail Decarbonisation System shall provide a high level of Availability to ensure 192 Mtpa annual tonnage is achieved, with the specific percentage target to be determined during the System Definition phase based on operational needs and industry benchmarks.&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
@@ -98,7 +110,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA1/EA160.html">«ArchiMate_Capability» CAP2 Operational Risk Assessment</a><br />
+						<a href="../../EA2/EA1/EA189.html">«ArchiMate_Capability» CAP6 Reliability, Availability and Maintainability (RAM)</a><br />
 						Capability «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -112,8 +124,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink367" onclick="parent.toggleDiv('detailsDIVLink367','DetailsImageLink367')" />Details:
-							<div id="detailsDIVLink367" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink364" onclick="parent.toggleDiv('detailsDIVLink364','DetailsImageLink364')" />Details:
+							<div id="detailsDIVLink364" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -121,7 +133,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA1/EA175.html">«ArchiMate_Capability» CAP24 Operability</a><br />
+						<a href="../../EA2/EA1/EA176.html">«ArchiMate_Capability» CAP24 Operability</a><br />
 						Capability «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -135,8 +147,31 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink368" onclick="parent.toggleDiv('detailsDIVLink368','DetailsImageLink368')" />Details:
-							<div id="detailsDIVLink368" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink365" onclick="parent.toggleDiv('detailsDIVLink365','DetailsImageLink365')" />Details:
+							<div id="detailsDIVLink365" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA2/EA1/EA174.html">«ArchiMate_Capability» CAP20 Integrated System Architecture Design</a><br />
+						Capability «ArchiMate_Association» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink366" onclick="parent.toggleDiv('detailsDIVLink366','DetailsImageLink366')" />Details:
+							<div id="detailsDIVLink366" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -170,6 +205,6 @@
 			</table>
 		</div>	</div>
 <div class="pageFooter"></div>
-
+ 
 </body>
 </html>

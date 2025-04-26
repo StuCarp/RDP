@@ -1,46 +1,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>A.12 Mines</title>
-  <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
-  <script>
-    function highlightNode(targetHref) {
-      const links = document.querySelectorAll('a');
-      for (const link of links) {
-        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
-        const target = targetHref.replace(/.*\//, '');
-        if (linkHref === target) {
-          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          link.style.backgroundColor = '#ffd'; // highlight color
-          break;
-        }
-      }
-    }
-  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>A.14 HIVE Operations Centre</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
 </head>
-<body onload="tocInit()">
-  <div class="PageBody">
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
 	
 <img src="EA446.png" usemap="#EA446" border="0" />
 
 <MAP NAME="EA446">
-<area shape="rect" coords="30,43,218,66" href="EA421.html" target="_self">
-<area shape="rect" coords="241,204,373,249" href="./EA1/EA953.html" target="_self">
-<area shape="rect" coords="54,204,186,249" href="./EA1/EA952.html" target="_self">
-<area shape="rect" coords="106,63,322,151" href="./EA1/EA1087.html" target="_self">
-<area shape="rect" coords="10,10,497,329" href="EA419.html" target="_self">
+<area shape="rect" coords="30,43,210,66" href="EA417.html" target="_self">
+<area shape="rect" coords="246,208,378,253" href="./EA1/EA1074.html" target="_self">
+<area shape="rect" coords="78,278,210,323" href="./EA1/EA1073.html" target="_self">
+<area shape="rect" coords="78,208,210,253" href="./EA1/EA1072.html" target="_self">
+<area shape="rect" coords="126,67,329,169" href="./EA1/EA1102.html" target="_self">
+<area shape="rect" coords="10,10,478,403" href="EA415.html" target="_self">
 </MAP>
 
-	<div class="ObjectTitle">A.12 Mines : SysML Block Definition diagram</div>
+	<div class="ObjectTitle">A.14 HIVE Operations Centre : SysML Block Definition diagram</div>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">12/04/2025 14:50:14</td>
+			<td width="85%" class="ObjectDetailsValue">12/04/2025 14:55:09</td>
 		</tr>
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
-			<td width="85%" class="ObjectDetailsValue">15/04/2025 00:07:49</td>
+			<td width="85%" class="ObjectDetailsValue">15/04/2025 00:08:18</td>
 		</tr>
 		<tr style="padding-top: 10px;">
 			<td width="15%" class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
@@ -60,11 +72,11 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
-			<td width="85%" class="ObjectDetailsValue">{68DD96F1-9B23-497c-A570-C3FE5CBB0338}</td>
+			<td width="85%" class="ObjectDetailsValue">{5D6EEAFB-33E5-4d99-B032-1CC1597D0236}</td>
 		</tr>
 	</table>
 	
 </div>
-
+ 
 </body>
 </html>

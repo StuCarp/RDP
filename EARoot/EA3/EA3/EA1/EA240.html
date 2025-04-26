@@ -1,33 +1,44 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>BRS Elements::RDP-BRS-085 The Rail Decarbonisation System shall define a commercialisation strategy for the RDP solution, outlining the steps for scaling and market adoption.</title>
-  <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
-  <script>
-    function highlightNode(targetHref) {
-      const links = document.querySelectorAll('a');
-      for (const link of links) {
-        const linkHref = link.getAttribute('href')?.replace(/.*\//, '');
-        const target = targetHref.replace(/.*\//, '');
-        if (linkHref === target) {
-          link.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          link.style.backgroundColor = '#ffd'; // highlight color
-          break;
-        }
-      }
-    }
-  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>BRS Elements::RDP-BRS-077 The Rail Decarbonisation System shall be protected such that neither software nor any introduced asset to the Rail Decarbonisation System can be accessed or tampered with by unauthorised persons, devices or materials</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
 </head>
-<body onload="tocInit()">
-  <div class="pageHeader"></div>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RDP-BRS-085 The Rail Decarbonisation System shall define a commercialisation strategy for the RDP solution, outlining the steps for scaling and market adoption.", " : "))</script>  : Public  &lt;&lt;ArchiMate_Requirement&gt;&gt; Requirement</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RDP-BRS-077 The Rail Decarbonisation System shall be protected such that neither software nor any introduced asset to the Rail Decarbonisation System can be accessed or tampered with by unauthorised persons, devices or materials", " : "))</script>  : Public  &lt;&lt;ArchiMate_Requirement&gt;&gt; Requirement</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">13/03/2025 11:36:11</td>
+			<td width="85%" class="ObjectDetailsValue">24/02/2025 15:37:59</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -44,11 +55,11 @@
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsValue">1</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
-			<td class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsValue">1</td>
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
@@ -76,11 +87,11 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B41E51DF-7BDF-4bb7-8174-5EA69D6BCF44}</td>
+			<td class="ObjectDetailsValue">{EF2F1764-2FDD-484b-8ED9-E9CA324E5D77}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA2/EA138.html">GL4</a>, <a href="../EA189.html">Business Requirements Specification (BRS)</a>, <a href="../../EA4/EA289.html">BRS Candidate Requirements</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA2/EA137.html">GL3</a>, <a href="../../EA2/EA141.html">GL5</a>, <a href="../../EA2/EA145.html">GL7</a>, <a href="../EA190.html">Business Requirements Specification (BRS)</a></td>
 		</tr>
 	</table>
 	
@@ -98,7 +109,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA1/EA166.html">«ArchiMate_Capability» CAP10 Decarbonisation Solution Commercialisation</a><br />
+						<a href="../../EA2/EA1/EA185.html">«ArchiMate_Capability» CAP37 Simplified Operational Frameworks</a><br />
 						Capability «ArchiMate_Association» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -112,8 +123,31 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink385" onclick="parent.toggleDiv('detailsDIVLink385','DetailsImageLink385')" />Details:
-							<div id="detailsDIVLink385" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink383" onclick="parent.toggleDiv('detailsDIVLink383','DetailsImageLink383')" />Details:
+							<div id="detailsDIVLink383" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA2/EA1/EA184.html">«ArchiMate_Capability» CAP36 Safety & Security Risk Management</a><br />
+						Capability «ArchiMate_Association» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink384" onclick="parent.toggleDiv('detailsDIVLink384','DetailsImageLink384')" />Details:
+							<div id="detailsDIVLink384" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -147,6 +181,6 @@
 			</table>
 		</div>	</div>
 <div class="pageFooter"></div>
-
+ 
 </body>
 </html>
