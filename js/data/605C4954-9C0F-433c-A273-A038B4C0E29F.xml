@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.2.2.1:1", "", "00 Motivation", "EARoot/EA2/EA2/EA1/EA68.html", "175.png", "149", "0", "", "Logical diagram0","{F4EFE31E-1071-45a1-8574-DD55C458798D}");
-tocTab[tocTab.length] = new Array("0.2.2.1:2", "", "«ArchiMate_Goal» Goal", "EARoot/EA2/EA2/EA1/EA71.html", "9F0DDA8A-5_ArchiMate_Goal.png", "E5234", "0", "", "Class0","{9D4F2667-1E9B-47c1-B1C3-8A4FB216E928}");
-tocTab[tocTab.length] = new Array("0.2.2.1:3", "", "«ArchiMate_Requirement» Requirement", "EARoot/EA2/EA2/EA1/EA72.html", "9F0DDA8A-5_ArchiMate_Requirement.png", "E5233", "0", "", "Class0","{F87ED3F4-A54E-46f3-AA22-7FA3715034C4}");
+tocTab[tocTab.length] = new Array("0.2.2.1:1", "", "00 Motivation", "EARoot/EA2/EA2/EA1/EA68.-1", "175.png", "149", "0", "", "Logical diagram0","{F4EFE31E-1071-45a1-8574-DD55C458798D}");
+tocTab[tocTab.length] = new Array("0.2.2.1:2", "", "«ArchiMate_Goal» Goal", "EARoot/EA2/EA2/EA1/EA71.-1", "9F0DDA8A-5_ArchiMate_Goal.png", "E5234", "0", "", "Class0","{9D4F2667-1E9B-47c1-B1C3-8A4FB216E928}");
+tocTab[tocTab.length] = new Array("0.2.2.1:3", "", "«ArchiMate_Requirement» Requirement", "EARoot/EA2/EA2/EA1/EA72.-1", "9F0DDA8A-5_ArchiMate_Requirement.png", "E5233", "0", "", "Class0","{F87ED3F4-A54E-46f3-AA22-7FA3715034C4}");

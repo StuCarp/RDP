@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.4.2.2:1", "", "Signalling System Description", "EARoot/EA4/EA2/EA2/EA1309.html", "175.png", "247", "0", "", "Logical diagram0","{8BB763B5-ED6A-4c58-893C-E806A90CB662}");
-tocTab[tocTab.length] = new Array("0.4.2.2:2", "", "AC Immune Signalling Locations", "EARoot/EA4/EA2/EA2/EA1311.html", "182.png", "257", "0", "", "CompositeStructure diagram0","{0806EAE6-4036-458c-986F-32A9D4B86394}");
-tocTab[tocTab.length] = new Array("0.4.2.2:3", "", "Existing Signalling Locations", "EARoot/EA4/EA2/EA2/EA1313.html", "182.png", "258", "0", "", "CompositeStructure diagram0","{2270AAF8-98C1-4eaa-8028-10E52A07072E}");
-tocTab[tocTab.length] = new Array("0.4.2.2.1", "1", "Signalling System Description Elements", "EARoot/EA4/EA2/EA2/EA1/EA1358.html", "4.png", "", "", "{217C71C2-87F0-4b4c-AED7-D267456599CC}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.2:1", "", "Signalling System Description", "EARoot/EA4/EA2/EA2/EA1309.-1", "175.png", "247", "0", "", "Logical diagram0","{8BB763B5-ED6A-4c58-893C-E806A90CB662}");
+tocTab[tocTab.length] = new Array("0.4.2.2:2", "", "AC Immune Signalling Locations", "EARoot/EA4/EA2/EA2/EA1311.-1", "182.png", "257", "0", "", "CompositeStructure diagram0","{0806EAE6-4036-458c-986F-32A9D4B86394}");
+tocTab[tocTab.length] = new Array("0.4.2.2:3", "", "Existing Signalling Locations", "EARoot/EA4/EA2/EA2/EA1313.-1", "182.png", "258", "0", "", "CompositeStructure diagram0","{2270AAF8-98C1-4eaa-8028-10E52A07072E}");
+tocTab[tocTab.length] = new Array("0.4.2.2.1", "1", "Signalling System Description Elements", "EARoot/EA4/EA2/EA2/EA1/EA1358.-1", "4.png", "", "", "{217C71C2-87F0-4b4c-AED7-D267456599CC}", "Package");

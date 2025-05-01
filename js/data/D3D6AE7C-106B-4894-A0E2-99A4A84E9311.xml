@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.4.2.1", "1", "Interfaces", "EARoot/EA4/EA2/EA1/EA1174.html", "4.png", "", "", "{F02EE18A-665F-47c5-86AC-9D67BDCED488}", "Package");
-tocTab[tocTab.length] = new Array("0.4.2.2", "1", "Signalling System Description", "EARoot/EA4/EA2/EA2/EA1315.html", "4.png", "", "", "{7FE69C35-5B84-403f-9029-236683B15A99}", "Package");
-tocTab[tocTab.length] = new Array("0.4.2.3", "1", "System Definition", "EARoot/EA4/EA2/EA3/EA1382.html", "4.png", "", "", "{A56F24F4-59F3-432c-8731-7460951C9A1B}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.1", "1", "Interfaces", "EARoot/EA4/EA2/EA1/EA1174.-1", "4.png", "", "", "{F02EE18A-665F-47c5-86AC-9D67BDCED488}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.2", "1", "Signalling System Description", "EARoot/EA4/EA2/EA2/EA1315.-1", "4.png", "", "", "{7FE69C35-5B84-403f-9029-236683B15A99}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.3", "1", "System Definition", "EARoot/EA4/EA2/EA3/EA1382.-1", "4.png", "", "", "{A56F24F4-59F3-432c-8731-7460951C9A1B}", "Package");

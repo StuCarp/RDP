@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.2.2.1", "1", "00 Motivation", "EARoot/EA2/EA2/EA1/EA70.html", "4.png", "", "", "{605C4954-9C0F-433c-A273-A038B4C0E29F}", "Package");
-tocTab[tocTab.length] = new Array("0.2.2.2", "1", "01 Strategy", "EARoot/EA2/EA2/EA2/EA75.html", "4.png", "", "", "{B31966C2-B0D1-474e-BCF8-D99465818AC6}", "Package");
-tocTab[tocTab.length] = new Array("0.2.2.3", "", "02 Business", "EARoot/EA2/EA2/EA3/EA78.html", "4.png", "", "", "{B17C76A0-98B5-4805-B609-1C076E5477F9}", "Package");
-tocTab[tocTab.length] = new Array("0.2.2.4", "1", "03 Application", "EARoot/EA2/EA2/EA4/EA81.html", "4.png", "", "", "{9876F13E-45D5-4b64-97CD-A5869645B1F2}", "Package");
-tocTab[tocTab.length] = new Array("0.2.2.5", "1", "04 Technology", "EARoot/EA2/EA2/EA5/EA84.html", "4.png", "", "", "{FE0E1E6F-18F3-4893-9598-774A8D818171}", "Package");
-tocTab[tocTab.length] = new Array("0.2.2.6", "1", "05 Implementation & Migration", "EARoot/EA2/EA2/EA6/EA87.html", "4.png", "", "", "{A37E1B0C-8179-4d3c-904A-85C0B193CF5F}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.1", "1", "00 Motivation", "EARoot/EA2/EA2/EA1/EA70.-1", "4.png", "", "", "{605C4954-9C0F-433c-A273-A038B4C0E29F}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.2", "1", "01 Strategy", "EARoot/EA2/EA2/EA2/EA75.-1", "4.png", "", "", "{B31966C2-B0D1-474e-BCF8-D99465818AC6}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.3", "", "02 Business", "EARoot/EA2/EA2/EA3/EA78.-1", "4.png", "", "", "{B17C76A0-98B5-4805-B609-1C076E5477F9}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.4", "1", "03 Application", "EARoot/EA2/EA2/EA4/EA81.-1", "4.png", "", "", "{9876F13E-45D5-4b64-97CD-A5869645B1F2}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.5", "1", "04 Technology", "EARoot/EA2/EA2/EA5/EA84.-1", "4.png", "", "", "{FE0E1E6F-18F3-4893-9598-774A8D818171}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.6", "1", "05 Implementation & Migration", "EARoot/EA2/EA2/EA6/EA87.-1", "4.png", "", "", "{A37E1B0C-8179-4d3c-904A-85C0B193CF5F}", "Package");
