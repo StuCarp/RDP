@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DET-BET Model</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			const img = document.querySelector('.diagram_image img');
+			const mapAreas = document.querySelectorAll('area');
+
+			if (img && mapAreas.length > 0) {
+				//Get original and rendered image dimensions
+				const originalWidth = img.naturalWidth;
+				const originalHeight = img.naturalHeight;
+				const renderedWidth = img.clientWidth || originalWidth; 
+				const renderedHeight = img.clientHeight || originalHeight; 
+				
+				//Calculate scaling factors
+				const scaleX = renderedWidth / originalWidth;
+				const scaleY = renderedHeight / originalHeight;
+
+				//Adjust map area coordinates
+				mapAreas.forEach((area) => {
+				  const originalCoords = area.getAttribute('coords').split(',').map(Number);
+				  const scaledCoords = originalCoords.map((coord, index) =>
+					index % 2 === 0 ? coord * scaleX : coord * scaleY
+				  );
+				  area.setAttribute('coords', scaledCoords.join(','));
+				});
+			}
+		});
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> DET-BET Model </h1>
+			<!-- <img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../index.htm">Model</a> / <a href="../EA41.htm">Archive</a> / <a href="EA51.htm">Other Software Assets</a> / <a href="EA47.htm">DET-BET Model</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="EA47.htm">DET-BET Model</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="EA49.htm">Truck Performance and Energy Data Model</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA52.htm">Archive_Telemetery and GPS Modelling</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA53.htm">Archived_B.01 DET-BET Model</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA54.htm">Archived_B.02 BANLAW (Fuel Management and Reporting System)</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA55.htm">Archived_B.03 Battery Estimation Simulation Tool</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA56.htm">Archived_B.04 LMD</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA57.htm">Archived_B.05 Maptek Vulcan (LiDAR)</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA58.htm">Archived_B.05 Maptek Vulcan (LiDAR)</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA59.htm">Archived_B.07 MinOps to MaxOps Operational Envelope Modelling</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA60.htm">Archived_B.08 Truck Performance and Energy Data Model</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA61.htm">Archived_B.09 VIMS</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA62.htm">Archived_B.12 Product Quality Control Tool</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA63.htm">Archived_C.05 Infrastructure AI Optimisation (e.g. Study Buddy)</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA64.htm">Archived_C.06 PowerFactory (DIgSILENT)</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA65.htm">Archived_Fortex Function-HaulageAI</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA66.htm">Archived_Fortex Function-HaulSIM</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="EA80.htm">Archived_B.11 Customer Database</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA67.htm">DGS-DET_BET-FR-003 Haul Infinity Model from Alastri broken down to segments, haul strings, and predicted times.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA68.htm">DGS-DET_BET-FR-004 LiDAR may improve the accuracy of Alastri strings.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA69.htm">DGS-DET_BET-FR-005 / 017 10Y planning outputs</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA70.htm">DGS-DET_BET-FR-007 BET constraint overlay functionality.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA71.htm">DGS-DET_BET-FR-008 MinOps to MaxOps Operational Envelope Modelling.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA72.htm">DGS-DET_BET-FR-009 Weather operational data.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA73.htm">DGS-DET_BET-FR-010 Energy consumption prediction at segment level granularity.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA74.htm">DGS-DET_BET-FR-015 50% reduction in manual effort.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA75.htm">DGS-DET_BET-FR-016 Real-time dispatch optimisation.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA76.htm">DGS-DET_BET-FR-018 Real-time data feeds.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA77.htm">DGS-DET_BET-FR-019 Planning calendar sync.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA78.htm">DGS-DET_BET-FR-020 Tactical Planning System.</a></li>
+<li><img src="../../../images/19.png" alt="Requirement"/> <a href="EA79.htm">DGS-DET_BET-FR-021 Alastri Interface Version Control.</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA48.png" usemap="#EA48" width="1958" height="2018" border="0" />
+
+<MAP NAME="EA48">
+<area shape="rect" coords="1080,1554,1236,1659" href="EA60.htm" target="_self">
+<area shape="rect" coords="77,65,476,521" href="../../EA4/EA2/EA1/EA3/EA1023.htm" target="_self">
+<area shape="rect" coords="89,458,254,594" href="EA71.htm" target="_self">
+<area shape="rect" coords="1722,1268,1887,1358" href="EA79.htm" target="_self">
+<area shape="rect" coords="1722,1164,1887,1254" href="EA77.htm" target="_self">
+<area shape="rect" coords="1722,1061,1887,1151" href="EA74.htm" target="_self">
+<area shape="rect" coords="1722,957,1887,1047" href="EA78.htm" target="_self">
+<area shape="rect" coords="1722,854,1887,944" href="EA76.htm" target="_self">
+<area shape="rect" coords="1473,458,1638,594" href="EA69.htm" target="_self">
+<area shape="rect" coords="510,1415,726,1502" href="EA75.htm" target="_self">
+<area shape="rect" coords="1251,458,1416,594" href="EA72.htm" target="_self">
+<area shape="rect" coords="1029,458,1194,594" href="EA68.htm" target="_self">
+<area shape="rect" coords="755,458,971,593" href="EA67.htm" target="_self">
+<area shape="rect" coords="533,458,698,594" href="EA70.htm" target="_self">
+<area shape="rect" coords="311,458,476,594" href="EA73.htm" target="_self">
+<area shape="rect" coords="947,1772,1109,1826" href="../../EA4/EA2/EA3/EA1148.htm" target="_self">
+<area shape="rect" coords="794,1391,929,1527" href="../../EA4/EA1/EA613.htm" target="_self">
+<area shape="rect" coords="342,1235,477,1340" href="../../EA4/EA1/EA825.htm" target="_self">
+<area shape="rect" coords="1016,1452,1178,1506" href="../../EA4/EA2/EA3/EA1232.htm" target="_self">
+<area shape="rect" coords="729,1055,864,1160" href="EA66.htm" target="_self">
+<area shape="rect" coords="1245,1746,1380,1851" href="../../EA4/EA1/EA808.htm" target="_self">
+<area shape="rect" coords="1523,1403,1679,1508" href="EA55.htm" target="_self">
+<area shape="rect" coords="1160,1307,1316,1412" href="EA58.htm" target="_self">
+<area shape="rect" coords="930,1055,1086,1160" href="EA56.htm" target="_self">
+<area shape="rect" coords="1160,1055,1316,1160" href="EA61.htm" target="_self">
+<area shape="rect" coords="522,1055,678,1160" href="EA57.htm" target="_self">
+<area shape="rect" coords="332,1056,488,1161" href="EA52.htm" target="_self">
+<area shape="rect" coords="128,1055,284,1191" href="EA54.htm" target="_self">
+<area shape="rect" coords="401,687,557,756" href="../EA2/EA1/EA140.htm" target="_self">
+<area shape="rect" coords="401,765,557,834" href="../EA2/EA1/EA141.htm" target="_self">
+<area shape="rect" coords="1403,1055,1559,1160" href="../../EA4/EA1/EA797.htm" target="_self">
+<area shape="rect" coords="720,710,876,815" href="EA53.htm" target="_self">
+<area shape="rect" coords="15,15,1943,2003" href="EA47.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">DET-BET Model : SysML Block Definition diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">18/09/2025 16:54:25</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">24/09/2025 23:09:47</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Admin</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{7E96D59C-D5AE-4ba9-8F5B-100B833563AB}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

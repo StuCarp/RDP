@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.4.2.5.1:1", "", "Bonney Downs: Substation (220kV): H.01.06 Substation (220kV)", "EARoot/EA4/EA2/EA5/EA1/EA1805.htm", "25.png", "E4593", "0", "", "Object0","{742E63E0-194F-4734-A25B-4094768C25AF}");
+tocTab[tocTab.length] = new Array("0.4.2.5.1:2", "", "Bonney Downs: Wind Farms: H.04.02 Wind Farms", "EARoot/EA4/EA2/EA5/EA1/EA1806.htm", "25.png", "E6629", "0", "", "Object0","{4B64134B-411B-4bbb-A2F6-5E030E105340}");

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Solomon Mine Hub</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			const img = document.querySelector('.diagram_image img');
+			const mapAreas = document.querySelectorAll('area');
+
+			if (img && mapAreas.length > 0) {
+				//Get original and rendered image dimensions
+				const originalWidth = img.naturalWidth;
+				const originalHeight = img.naturalHeight;
+				const renderedWidth = img.clientWidth || originalWidth; 
+				const renderedHeight = img.clientHeight || originalHeight; 
+				
+				//Calculate scaling factors
+				const scaleX = renderedWidth / originalWidth;
+				const scaleY = renderedHeight / originalHeight;
+
+				//Adjust map area coordinates
+				mapAreas.forEach((area) => {
+				  const originalCoords = area.getAttribute('coords').split(',').map(Number);
+				  const scaledCoords = originalCoords.map((coord, index) =>
+					index % 2 === 0 ? coord * scaleX : coord * scaleY
+				  );
+				  area.setAttribute('coords', scaledCoords.join(','));
+				});
+			}
+		});
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Solomon Mine Hub </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Model</a> / <a href="../../EA556.htm">MBSE Project (SysML)</a> / <a href="../EA897.htm">System Definition</a> / <a href="EA1793.htm">Locations</a> / <a href="./EA10/EA2151.htm">Solomon Mine Hub</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2172.htm">Solomon Mine Hub: Ore Processing Facility (OPF): F.01 Ore Processing Facility (OPF)</a></li>
+<li><img src="../../../../images/99.png" alt="UMLDiagram"/> <a href="./EA10/EA2171.htm">System Definition - Solomon Mine Hub</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2162.htm">Solomon Mine Hub: Ore Stockpile: L.03 Ore Stockpile</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2164.htm">Solomon Mine Hub: Run of Mine (ROM): L.01 Run of Mine (ROM)</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2154.htm">Solomon Mine Hub: Coarse Ore Stockpile (COS): L.02 Coarse Ore Stockpile (COS)</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2170.htm">Solomon Mine Hub: Train Load Out (TLO): F.08 Train Load Out (TLO)</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2163.htm">Solomon Mine Hub: Primary Crusher: F.07 Primary Crusher</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2155.htm">Solomon Mine Hub: Decarb Ancillary: E. Decarb Ancillary</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2161.htm">Solomon Mine Hub: Light Mobile Equipment (LME): D. Light Mobile Equipment (LME)</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2167.htm">Solomon Mine Hub: Support Mobile Equipment (SME): C. Support Mobile Equipment (SME)</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2153.htm">Solomon Mine Hub: Chargers: G.01 Chargers</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2160.htm">Solomon Mine Hub: Heavy Mobile Equipment (HME): B. Heavy Mobile Equipment (HME)</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2156.htm">Solomon Mine Hub: Dewatering Pumps: F.03 Dewatering Pumps</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2157.htm">Solomon Mine Hub: Energy Generation: H.04 Energy Generation</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2165.htm">Solomon Mine Hub: Sub Kiosks: G.03 Sub Kiosks</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2159.htm">Solomon Mine Hub: Field Switches: G.02 Field Switches</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2158.htm">Solomon Mine Hub: Energy Storage Systems: H.03 Energy Storage Systems</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2166.htm">Solomon Mine Hub: Substations: H.01 Substations</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2152.htm">Solomon Mine Hub: CCTV: F.06 CCTV</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2169.htm">Solomon Mine Hub: Trailing Cable: G.04 Trailing Cable</a></li>
+<li><img src="../../../../images/25.png" alt="Object"/> <a href="./EA10/EA2168.htm">Solomon Mine Hub: Thermal Generators: K.04 Thermal Generators</a></li>
+<li><img src="../../../../images/175.png" alt="Diagram"/> <a href="./EA10/EA2149.htm">System Definition - Solomon Mine Hub</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Solomon Mine Hub  : Public   Package</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">26/09/2025 15:19:57</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">29/09/2025 14:49:29</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Admin</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{895831A6-5ECD-89B3-B62C-90C6184E59FA}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="./EA10/EA2149.htm">System Definition - Solomon Mine Hub</a></td>
+		</tr>
+	</table>
+	
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

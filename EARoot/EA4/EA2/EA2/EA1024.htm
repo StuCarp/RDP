@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Interface Requirements</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			const img = document.querySelector('.diagram_image img');
+			const mapAreas = document.querySelectorAll('area');
+
+			if (img && mapAreas.length > 0) {
+				//Get original and rendered image dimensions
+				const originalWidth = img.naturalWidth;
+				const originalHeight = img.naturalHeight;
+				const renderedWidth = img.clientWidth || originalWidth; 
+				const renderedHeight = img.clientHeight || originalHeight; 
+				
+				//Calculate scaling factors
+				const scaleX = renderedWidth / originalWidth;
+				const scaleY = renderedHeight / originalHeight;
+
+				//Adjust map area coordinates
+				mapAreas.forEach((area) => {
+				  const originalCoords = area.getAttribute('coords').split(',').map(Number);
+				  const scaledCoords = originalCoords.map((coord, index) =>
+					index % 2 === 0 ? coord * scaleX : coord * scaleY
+				  );
+				  area.setAttribute('coords', scaledCoords.join(','));
+				});
+			}
+		});
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Interface Requirements </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Model</a> / <a href="../../EA556.htm">MBSE Project (SysML)</a> / <a href="../EA897.htm">System Definition</a> / <a href="EA1026.htm">Interface Requirements</a> / <a href="EA1024.htm">Interface Requirements</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1045.htm">IF_Req-019</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1044.htm">IF_Req-018</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1043.htm">IF_Req-017</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1042.htm">IF_Req-016</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1041.htm">IF_Req-015</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1040.htm">IF_Req-014</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1039.htm">IF_Req-013</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1038.htm">IF_Req-012</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1036.htm">IF_Req-010</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1035.htm">IF_Req-009</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1034.htm">IF_Req-008</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1033.htm">IF_Req-007</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1032.htm">IF_Req-006</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1031.htm">IF_Req-005</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1030.htm">IF_Req-004</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1029.htm">IF_Req-003</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1028.htm">IF_Req-002</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1027.htm">IF_Req-001</a></li>
+<li><img src="../../../../images/19.png" alt="Requirement"/> <a href="EA1037.htm">IF_Req-011</a></li>
+<li><img src="../../../../images/188.png" alt="Diagram"/> <a href="EA1024.htm">Interface Requirements</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA1025.png" usemap="#EA1025" width="4409" height="1295" border="0" />
+
+<MAP NAME="EA1025">
+<area shape="rect" coords="3764,936,4047,1224" href="EA1037.htm" target="_self">
+<area shape="rect" coords="45,665,815,1155" href="../EA3/EA1215.htm" target="_self">
+<area shape="rect" coords="2607,341,2891,629" href="EA1045.htm" target="_self">
+<area shape="rect" coords="2316,341,2600,629" href="EA1044.htm" target="_self">
+<area shape="rect" coords="2025,341,2309,629" href="EA1043.htm" target="_self">
+<area shape="rect" coords="1734,341,2018,629" href="EA1042.htm" target="_self">
+<area shape="rect" coords="1443,341,1727,629" href="EA1041.htm" target="_self">
+<area shape="rect" coords="1152,341,1436,629" href="EA1040.htm" target="_self">
+<area shape="rect" coords="861,341,1145,629" href="EA1039.htm" target="_self">
+<area shape="rect" coords="4055,936,4338,1224" href="EA1038.htm" target="_self">
+<area shape="rect" coords="3473,936,3756,1224" href="EA1036.htm" target="_self">
+<area shape="rect" coords="3182,936,3465,1224" href="EA1035.htm" target="_self">
+<area shape="rect" coords="2891,936,3174,1224" href="EA1034.htm" target="_self">
+<area shape="rect" coords="2600,936,2883,1224" href="EA1033.htm" target="_self">
+<area shape="rect" coords="2309,936,2592,1224" href="EA1032.htm" target="_self">
+<area shape="rect" coords="2018,936,2301,1224" href="EA1031.htm" target="_self">
+<area shape="rect" coords="1727,936,2010,1224" href="EA1030.htm" target="_self">
+<area shape="rect" coords="1436,936,1719,1224" href="EA1029.htm" target="_self">
+<area shape="rect" coords="1145,936,1428,1224" href="EA1028.htm" target="_self">
+<area shape="rect" coords="45,65,815,555" href="../EA3/EA1214.htm" target="_self">
+<area shape="rect" coords="854,936,1137,1224" href="EA1027.htm" target="_self">
+<area shape="rect" coords="15,15,4394,1280" href="EA1024.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Interface Requirements : SysML Requirements diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">13/11/2025 17:37:41</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">24/11/2025 20:12:15</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Admin</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{5096173B-6F94-4854-8CF4-46F06267A8E6}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

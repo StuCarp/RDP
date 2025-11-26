@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.4.2.1.1:1", "", "A.02.02 MECO", "EARoot/EA4/EA2/EA1/EA1/EA942.htm", "175.png", "221", "0", "", "Logical diagram0","{2C64706C-4CBB-4ef8-B84A-E677FDEF3F2E}");
+tocTab[tocTab.length] = new Array("0.4.2.1.1:2", "", "A.02.03 Mine Electrification SCADA", "EARoot/EA4/EA2/EA1/EA1/EA944.htm", "175.png", "210", "0", "", "Logical diagram0","{AC57A308-8B69-4165-8EA6-4650B317A83C}");
+tocTab[tocTab.length] = new Array("0.4.2.1.1:3", "", "A.02.04 Monarch", "EARoot/EA4/EA2/EA1/EA1/EA946.htm", "175.png", "222", "0", "", "Logical diagram0","{DF82A936-05E1-45ea-8A0D-55656F06FF2B}");

@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Capability Elements</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			const img = document.querySelector('.diagram_image img');
+			const mapAreas = document.querySelectorAll('area');
+
+			if (img && mapAreas.length > 0) {
+				//Get original and rendered image dimensions
+				const originalWidth = img.naturalWidth;
+				const originalHeight = img.naturalHeight;
+				const renderedWidth = img.clientWidth || originalWidth; 
+				const renderedHeight = img.clientHeight || originalHeight; 
+				
+				//Calculate scaling factors
+				const scaleX = renderedWidth / originalWidth;
+				const scaleY = renderedHeight / originalHeight;
+
+				//Adjust map area coordinates
+				mapAreas.forEach((area) => {
+				  const originalCoords = area.getAttribute('coords').split(',').map(Number);
+				  const scaledCoords = originalCoords.map((coord, index) =>
+					index % 2 === 0 ? coord * scaleX : coord * scaleY
+				  );
+				  area.setAttribute('coords', scaledCoords.join(','));
+				});
+			}
+		});
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Capability Elements </h1>
+			<!-- <img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../index.htm">Model</a> / <a href="../EA253.htm">ArchiMate 3.1 Project</a> / <a href="EA299.htm">Capability Mapping</a> / <a href="./EA1/EA303.htm">Capability Elements</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="./EA1/EA301.htm">Capabilities</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA304.htm">CAP1 Advanced Energy Management Systems</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA305.htm">CAP2 Operational Risk Assessment</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA306.htm">CAP3 Advanced Vehicle Tracking and Scheduling Algorithms</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA307.htm">CAP4 Asset Lifecycle Management</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA308.htm">CAP5 Asset Lifecycle Sustainability</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA309.htm">CAP7 Battery Performance Monitoring & Lifecycle Management</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA310.htm">CAP9 Collision Avoidance & Train Control</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA311.htm">CAP10 Decarbonisation Solution Commercialisation</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA312.htm">CAP11 Decommissioning & Redundant Asset Removal</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA313.htm">CAP12 Dynamic Capacity Management</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA314.htm">CAP14 Emergency & Disaster Recovery</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA315.htm">CAP17 Environmental Risk Assessment & Mitigation</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA316.htm">CAP18 Human Factors Engineering and Integration</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA317.htm">CAP19 Indigenous Heritage Consultation</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA318.htm">CAP20 Integrated System Architecture Design</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA319.htm">CAP22 Maintenance & Infrastructure Readiness</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA320.htm">CAP24 Operability</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA321.htm">CAP26 Performance Monitoring & Optimisation</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA322.htm">CAP28 Predictive Maintenance & Condition Monitoring</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA323.htm">CAP29 Project Footprint Compliance Monitoring</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA324.htm">CAP30 Rail Safety Engineering and Management Systems</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA325.htm">CAP31 System Electromagnetic Compatibility & Immunity</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA326.htm">CAP32 Rail Traffic Flow Optimisation</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA327.htm">CAP34 Renewable Energy Integration</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA328.htm">CAP36 Safety & Security Risk Management</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA329.htm">CAP37 Simplified Operational Frameworks</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA330.htm">CAP43 Train Control & Automation</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA331.htm">CAP45 Zero-Emissions Rail Technology Development</a></li>
+<li><img src="../../../images/5.png" alt="Class"/> <a href="./EA1/EA332.htm">CAP46 Energy Storage & Management</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Capability Elements  : Public   Package</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">18/02/2025 12:43:57</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/03/2025 09:50:57</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">neilhall</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{4ACD3CC3-3207-4425-8C5A-EB871BA414EA}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

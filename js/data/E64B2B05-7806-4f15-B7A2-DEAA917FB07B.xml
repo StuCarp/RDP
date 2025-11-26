@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.4.2.1.2:1", "", "A.03.01 Charge Station Management System (CSMS)", "EARoot/EA4/EA2/EA1/EA2/EA970.htm", "175.png", "268", "0", "", "Logical diagram0","{27AE0011-DFC1-49b5-A4A0-1C2A98870E7E}");
+tocTab[tocTab.length] = new Array("0.4.2.1.2:2", "", "A.03.02 Load Management System (LMS)", "EARoot/EA4/EA2/EA1/EA2/EA972.htm", "175.png", "267", "0", "", "Logical diagram0","{A5C57B11-EAA1-47fc-B0B0-13E9C0D28CC0}");

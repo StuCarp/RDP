@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.4.2.5.1", "1", "Bonney Downs", "EARoot/EA4/EA2/EA5/EA1/EA1804.htm", "4.png", "", "", "{96387568-F3BF-4FD4-8374-2FC4C3DCE39E}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.5.2", "1", "Christmas Creek Mine", "EARoot/EA4/EA2/EA5/EA2/EA1809.htm", "4.png", "", "", "{8D54836D-D71A-56B8-9990-4067B7FBCB3F}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.5.3", "1", "Cloudbreak Mine", "EARoot/EA4/EA2/EA5/EA3/EA1868.htm", "4.png", "", "", "{A9A9C94F-85FE-EB83-835A-666BA7359849}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.5.4", "1", "Eliwana Mine", "EARoot/EA4/EA2/EA5/EA4/EA1928.htm", "4.png", "", "", "{9A3EF2EC-42C8-ECE7-852B-9402AB0409BC}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.5.5", "1", "Flying Fish Mine", "EARoot/EA4/EA2/EA5/EA5/EA1982.htm", "4.png", "", "", "{97DC36A8-0BA0-1C6D-9E66-D40E6350A469}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.5.6", "1", "Iron Bridge Mine", "EARoot/EA4/EA2/EA5/EA6/EA2035.htm", "4.png", "", "", "{8DF313C7-B08B-850B-8CDF-38E6EA80D927}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.5.7", "1", "Nyidinghu Hub", "EARoot/EA4/EA2/EA5/EA7/EA2090.htm", "4.png", "", "", "{82697402-FF7F-2107-9031-270F1C7FE036}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.5.8", "1", "PEC Transmission Network", "EARoot/EA4/EA2/EA5/EA8/EA2093.htm", "4.png", "", "", "{A2C4B7FF-3172-715C-84E4-482D54DE3875}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.5.9", "1", "Port Hedland", "EARoot/EA4/EA2/EA5/EA9/EA2107.htm", "4.png", "", "", "{979A192F-58A9-28CA-BDCF-C3157E9E4112}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.5.10", "1", "Solomon Mine Hub", "EARoot/EA4/EA2/EA5/EA10/EA2151.htm", "4.png", "", "", "{895831A6-5ECD-89B3-B62C-90C6184E59FA}", "Package");

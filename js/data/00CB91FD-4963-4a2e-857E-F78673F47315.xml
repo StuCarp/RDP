@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.4.2.1.1", "1", "Existing Systems - Green Enhancement", "EARoot/EA4/EA2/EA1/EA1/EA948.htm", "4.png", "", "", "{A3E7113E-B43C-4a69-9934-5E3FB5E93E6B}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.1.2", "1", "Control & Monitoring Systems", "EARoot/EA4/EA2/EA1/EA2/EA974.htm", "4.png", "", "", "{E64B2B05-7806-4f15-B7A2-DEAA917FB07B}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.1.3", "1", "Planning and Forecast Systems", "EARoot/EA4/EA2/EA1/EA3/EA1014.htm", "4.png", "", "", "{D1ACF031-0CCC-4aef-8969-63FB65983D27}", "Package");

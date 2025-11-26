@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>A.03.01 Charge Station Management System (CSMS) - delete</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			const img = document.querySelector('.diagram_image img');
+			const mapAreas = document.querySelectorAll('area');
+
+			if (img && mapAreas.length > 0) {
+				//Get original and rendered image dimensions
+				const originalWidth = img.naturalWidth;
+				const originalHeight = img.naturalHeight;
+				const renderedWidth = img.clientWidth || originalWidth; 
+				const renderedHeight = img.clientHeight || originalHeight; 
+				
+				//Calculate scaling factors
+				const scaleX = renderedWidth / originalWidth;
+				const scaleY = renderedHeight / originalHeight;
+
+				//Adjust map area coordinates
+				mapAreas.forEach((area) => {
+				  const originalCoords = area.getAttribute('coords').split(',').map(Number);
+				  const scaledCoords = originalCoords.map((coord, index) =>
+					index % 2 === 0 ? coord * scaleX : coord * scaleY
+				  );
+				  area.setAttribute('coords', scaledCoords.join(','));
+				});
+			}
+		});
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> A.03.01 Charge Station Management System (CSMS) - delete </h1>
+			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../index.htm">Model</a> / <a href="EA41.htm">Archive</a> / <a href="EA3.htm">A.03.01 Charge Station Management System (CSMS) - delete</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../images/4.png" alt="Package"/> <a href="./EA1/EA51.htm">Other Software Assets</a></li>
+<li><img src="../../images/4.png" alt="Package"/> <a href="./EA2/EA83.htm">Physical Assets</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA21.htm">A.01.01 Eclipse - delete</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA23.htm">A.01.01 Eclipse - Simplified</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA25.htm">A.01.02 LiveWire - delete</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA1.htm">A.01.02 LiveWire - Simplified - delete</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA27.htm">A.02.03 Power Infrastructure SCADA - Simplified</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA29.htm">A.03 Delphi - delete</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA3.htm">A.03.01 Charge Station Management System (CSMS) - delete</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA31.htm">A.03.01 Charge Station Management System (CSMS) - Simplified</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA33.htm">A.03.02 Load Management System (LMS) - Simplified</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA5.htm">A.03.03 Elysia</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA35.htm">A.05 MECO - delete</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA37.htm">A.10 Fleet Advanced Simulation Tool (FAST)</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA7.htm">A.13 Power Infra SCADA - delete</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA9.htm">A.16 Monarch - delete</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA11.htm">A.19 Pit Power Infrastructure Optimisation Tool</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA13.htm">A.21 Fortex</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA15.htm">A.29 Decarb AI</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA17.htm">Archived-Orphaned Software Assets</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA19.htm">System Definition - Solomon Mine Hub</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA39.htm">A. Decarb Green Systems (Levels 1 to 2)</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA4.png" usemap="#EA4" width="1620" height="1569" border="0" />
+
+<MAP NAME="EA4">
+<area shape="rect" coords="1217,1308,1377,1365" href="../EA4/EA2/EA3/EA1195.htm" target="_self">
+<area shape="rect" coords="1445,1274,1605,1400" href="../EA4/EA1/EA691.htm" target="_self">
+<area shape="rect" coords="15,15,414,471" href="../EA4/EA2/EA1/EA3/EA1023.htm" target="_self">
+<area shape="rect" coords="779,998,1010,1106" href="../EA4/EA2/EA1/EA2/EA972.htm" target="_self">
+<area shape="rect" coords="971,1274,1131,1331" href="../EA4/EA2/EA3/EA1220.htm" target="_self">
+<area shape="rect" coords="983,1418,1118,1554" href="../EA4/EA1/EA574.htm" target="_self">
+<area shape="rect" coords="1445,959,1605,1085" href="../EA4/EA2/EA1/EA3/EA1012.htm" target="_self">
+<area shape="rect" coords="1445,1418,1605,1544" href="../EA4/EA2/EA1/EA1/EA946.htm" target="_self">
+<area shape="rect" coords="794,1208,929,1344" href="../EA4/EA1/EA638.htm" target="_self">
+<area shape="rect" coords="1445,1115,1605,1241" href="../EA4/EA1/EA690.htm" target="_self">
+<area shape="rect" coords="128,1092,263,1197" href="../EA4/EA1/EA627.htm" target="_self">
+<area shape="rect" coords="1449,521,1517,656" href="../EA4/EA2/EA6/EA2222.htm" target="_self">
+<area shape="rect" coords="269,545,336,680" href="../EA4/EA2/EA6/EA2217.htm" target="_self">
+<area shape="rect" coords="1448,402,1515,537" href="../EA4/EA2/EA6/EA2221.htm" target="_self">
+<area shape="rect" coords="269,402,336,537" href="../EA4/EA2/EA6/EA2215.htm" target="_self">
+<area shape="rect" coords="828,206,896,341" href="../EA4/EA2/EA6/EA2219.htm" target="_self">
+<area shape="rect" coords="684,746,819,902" href="../EA4/EA1/EA593.htm" target="_self">
+<area shape="rect" coords="428,596,588,653" href="../EA4/EA2/EA3/EA1214.htm" target="_self">
+<area shape="rect" coords="1169,456,1329,513" href="../EA4/EA2/EA3/EA1217.htm" target="_self">
+<area shape="rect" coords="428,456,588,513" href="../EA4/EA2/EA3/EA1216.htm" target="_self">
+<area shape="rect" coords="782,396,942,453" href="../EA4/EA2/EA3/EA1215.htm" target="_self">
+<area shape="rect" coords="672,633,833,690" href="../EA4/EA2/EA3/EA1158.htm" target="_self">
+<area shape="rect" coords="1169,593,1329,650" href="../EA4/EA2/EA3/EA1218.htm" target="_self">
+<area shape="rect" coords="1217,993,1377,1050" href="../EA4/EA2/EA3/EA1219.htm" target="_self">
+<area shape="rect" coords="1217,1151,1377,1208" href="../EA4/EA2/EA3/EA1194.htm" target="_self">
+<area shape="rect" coords="1217,1452,1377,1509" href="../EA4/EA2/EA3/EA1196.htm" target="_self">
+<area shape="rect" coords="971,1116,1131,1173" href="../EA4/EA2/EA3/EA1222.htm" target="_self">
+<area shape="rect" coords="584,1151,744,1208" href="../EA4/EA2/EA3/EA1221.htm" target="_self">
+<area shape="rect" coords="312,1116,473,1173" href="../EA4/EA2/EA3/EA1192.htm" target="_self">
+<area shape="rect" coords="584,1023,744,1080" href="../EA4/EA2/EA3/EA1191.htm" target="_self">
+<area shape="rect" coords="437,854,642,906" href="../EA4/EA1/EA572.htm" target="_self">
+<area shape="rect" coords="1076,854,1281,906" href="../EA4/EA1/EA571.htm" target="_self">
+<area shape="rect" coords="638,509,1085,579" href="../EA4/EA2/EA1/EA2/EA970.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">A.03.01 Charge Station Management System (CSMS) - delete : SysML Block Definition diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">28/08/2025 15:58:34</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">30/10/2025 00:08:27</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Admin</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{E677176E-2A15-41d5-9B27-916BE0B2C23D}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

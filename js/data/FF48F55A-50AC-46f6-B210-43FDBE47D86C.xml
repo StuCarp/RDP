@@ -1,0 +1,15 @@
+tocTab[tocTab.length] = new Array("0.1.2.1:1", "", "Gas Power Station", "EARoot/EA1/EA2/EA1/EA126.htm", "182.png", "143", "0", "", "CompositeStructure diagram0","{1055DB3E-251A-47a4-BC96-16B6651C6969}");
+tocTab[tocTab.length] = new Array("0.1.2.1:2", "", "System Definition", "EARoot/EA1/EA2/EA1/EA128.htm", "175.png", "140", "0", "", "Logical diagram0","{0427FFD5-ABFC-4983-9A36-D3E015C39141}");
+tocTab[tocTab.length] = new Array("0.1.2.1:3", "", "System Definition - Superceeded", "EARoot/EA1/EA2/EA1/EA130.htm", "175.png", "193", "0", "", "Logical diagram0","{692A9CEF-C74C-4879-9E3F-108FE9D913C1}");
+tocTab[tocTab.length] = new Array("0.1.2.1:4", "", "«block» Archived_ C.04 Other OPF Assets (e.g. Conveyers)", "EARoot/EA1/EA2/EA1/EA136.htm", "5.png", "E1927", "0", "", "Class0","{D3C9CBCD-E659-4e11-9FE6-88531ED5282F}");
+tocTab[tocTab.length] = new Array("0.1.2.1:5", "", "«block» Archived_D.02.02 Excavators / Shovels (e.g. Liebherr 9400E)", "EARoot/EA1/EA2/EA1/EA137.htm", "5.png", "E2437", "0", "", "Class0","{C204E10B-70B4-4d32-BE61-5A8C7F53A5B0}");
+tocTab[tocTab.length] = new Array("0.1.2.1:6", "", "«block» Archived_Non FMG Assets (HRZ66kV & ALINTA 66kV)", "EARoot/EA1/EA2/EA1/EA138.htm", "5.png", "E1704", "0", "", "Class0","{6651E92F-B853-492d-9065-0A48B33C0B09}");
+tocTab[tocTab.length] = new Array("0.1.2.1:7", "", "«block» Archived_Non FMG Assets RHIO 220kV & NPS 220kV)", "EARoot/EA1/EA2/EA1/EA139.htm", "5.png", "E1746", "0", "", "Class0","{561680B9-9373-4f2b-B272-3873E0E2FB47}");
+tocTab[tocTab.length] = new Array("0.1.2.1:8", "", "«block» B.01.01 BET", "EARoot/EA1/EA2/EA1/EA140.htm", "5.png", "E2197", "0", "", "Class0","{5AADC8DC-9E16-44c5-9B55-B1AC9C926419}");
+tocTab[tocTab.length] = new Array("0.1.2.1:9", "", "«block» B.01.02 DET", "EARoot/EA1/EA2/EA1/EA141.htm", "5.png", "E2196", "0", "", "Class0","{61A5743E-80F0-48ff-B462-B7C9C2A7A29F}");
+tocTab[tocTab.length] = new Array("0.1.2.1:10", "", "Drilling for Exploration", "EARoot/EA1/EA2/EA1/EA154.htm", "21.png", "E2149", "0", "", "Activity0","{E3E73E92-73BE-4fe5-AD18-6FBB36332490}");
+tocTab[tocTab.length] = new Array("0.1.2.1:11", "", "«block» Archived_Mobile Fleet Light Mining Equipment (LME)", "EARoot/EA1/EA2/EA1/EA179.htm", "5.png", "E3319", "0", "", "Class0","{0378F185-4531-497c-83B7-4EE58B737E40}");
+tocTab[tocTab.length] = new Array("0.1.2.1:12", "", "«block» Archived_Support Mining Equipment", "EARoot/EA1/EA2/EA1/EA180.htm", "5.png", "E3320", "0", "", "Class0","{2047E876-7493-4598-AF0C-66A669BBB7BD}");
+tocTab[tocTab.length] = new Array("0.1.2.1:13", "", "«block» Archived_D.20.01 In-pit Switch Type 1", "EARoot/EA1/EA2/EA1/EA181.htm", "5.png", "E1420", "0", "", "Class0","{5D16E378-ADE9-4db5-9F1D-9CC34FFD6B5E}");
+tocTab[tocTab.length] = new Array("0.1.2.1:14", "", "«block» Archived_D.20.02 In-pit Switch Type 2", "EARoot/EA1/EA2/EA1/EA182.htm", "5.png", "E1421", "0", "", "Class0","{F61AA24F-84F6-4757-AC1C-B8EF1CF2D815}");
+tocTab[tocTab.length] = new Array("0.1.2.1:15", "", "«block» A.29 Decarb AI", "EARoot/EA1/EA2/EA1/EA183.htm", "5.png", "E1345", "0", "", "Class0","{4FF58C49-AE63-4def-9216-CD25D7CC19A5}");

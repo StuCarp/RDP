@@ -1,3 +1,9 @@
-tocTab[tocTab.length] = new Array("0.4.2.1", "1", "Interfaces", "EARoot/EA4/EA2/EA1/EA1174.html", "4.png", "", "", "{F02EE18A-665F-47c5-86AC-9D67BDCED488}", "Package");
-tocTab[tocTab.length] = new Array("0.4.2.2", "1", "Signalling System Description", "EARoot/EA4/EA2/EA2/EA1315.html", "4.png", "", "", "{7FE69C35-5B84-403f-9029-236683B15A99}", "Package");
-tocTab[tocTab.length] = new Array("0.4.2.3", "1", "System Definition", "EARoot/EA4/EA2/EA3/EA1382.html", "4.png", "", "", "{A56F24F4-59F3-432c-8731-7460951C9A1B}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2:1", "", "System Definition - Generic", "EARoot/EA4/EA2/EA891.htm", "175.png", "255", "0", "", "Logical diagram0","{D064C5DE-E16E-46ff-BC29-552C1F168F0F}");
+tocTab[tocTab.length] = new Array("0.4.2:2", "", "System Definition - Location Specific", "EARoot/EA4/EA2/EA893.htm", "175.png", "271", "0", "", "Logical diagram0","{597AD576-B1B6-4591-9A29-576760B01629}");
+tocTab[tocTab.length] = new Array("0.4.2:3", "", "System Definition - Simplified", "EARoot/EA4/EA2/EA895.htm", "175.png", "195", "0", "", "Logical diagram0","{C479DD81-4759-4dba-98E4-08092FD0E0FC}");
+tocTab[tocTab.length] = new Array("0.4.2.1", "1", "Decarb Green Systems", "EARoot/EA4/EA2/EA1/EA938.htm", "4.png", "", "", "{00CB91FD-4963-4a2e-857E-F78673F47315}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.2", "1", "Interface Requirements", "EARoot/EA4/EA2/EA2/EA1026.htm", "4.png", "", "", "{EB5E35AD-2E5B-4c7b-BADF-B836F757DC28}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.3", "1", "Interfaces", "EARoot/EA4/EA2/EA3/EA1046.htm", "4.png", "", "", "{A93876D3-A826-4639-9800-5417CF6ACE55}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.4", "1", "Non FMG Assets", "EARoot/EA4/EA2/EA4/EA1781.htm", "4.png", "", "", "{943CDE92-6396-4f9c-863F-889E75637FED}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.5", "1", "Locations", "EARoot/EA4/EA2/EA5/EA1793.htm", "4.png", "", "", "{8295BBF4-14A3-E553-BEC6-AE2FF22DBC04}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2.6", "1", "Stakeholders", "EARoot/EA4/EA2/EA6/EA2211.htm", "4.png", "", "", "{888D73F5-598D-4f88-9429-7CCEDF090FEF}", "Package");
